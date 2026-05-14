@@ -38,12 +38,18 @@ function resolveClaudeAgentDir(env: Record<string, string>): string | null {
   candidates.push(
     resolve(workspaceRoot, 'hermes-agent'), // sibling (old README)
     resolve(workspaceRoot, '..', 'hermes-agent'), // one level up
-    resolve(os.homedir(), '.claude', 'hermes-agent'), // Nous installer default
+    resolve(os.homedir(), '.hermes', 'hermes-agent'), // Nous installer actual
+    resolve(os.homedir(), '.claude', 'hermes-agent'), // Legacy Nous installer
     resolve(os.homedir(), 'hermes-agent'), // ~/hermes-agent
   )
 
   for (const candidate of candidates) {
-    if (existsSync(resolve(candidate, 'webapi'))) return candidate
+    if (
+      existsSync(resolve(candidate, 'hermes_cli', 'web_server.py')) ||
+      existsSync(resolve(candidate, 'webapi'))
+    ) {
+      return candidate
+    }
   }
   return null
 }
@@ -138,28 +144,23 @@ const config = defineConfig(({ mode, command }) => {
     let commandArgs: string[]
     let launchCwd: string | undefined
 
-    if (claudeBin) {
-      launchCmd = claudeBin
-      commandArgs = ['gateway', 'run']
-      launchCwd = agentDir ?? undefined
-      console.log(`[hermes-agent] Starting ${claudeBin} gateway run`)
-    } else if (agentDir) {
+    if (agentDir) {
       launchCmd = resolveClaudePython(agentDir)
-      const useGatewayRun = existsSync(resolve(agentDir, 'gateway', 'run.py'))
-      commandArgs = useGatewayRun
-        ? ['-m', 'gateway.run']
-        : [
-            '-m',
-            'uvicorn',
-            'webapi.app:app',
-            '--host',
-            '0.0.0.0',
-            '--port',
-            '8642',
-          ]
-      launchCwd = agentDir
+      launchCwd = agentDir || undefined
+
+      // Force uvicorn for the workspace API on port 8642
+      commandArgs = [
+        '-m',
+        'uvicorn',
+        'hermes_cli.web_server:app',
+        '--host',
+        '0.0.0.0',
+        '--port',
+        '8642',
+      ]
+
       console.log(
-        `[hermes-agent] Starting from ${agentDir} using ${launchCmd} (${useGatewayRun ? 'gateway.run' : 'uvicorn'})`,
+        `[hermes-agent] Starting ${launchCmd} uvicorn on port 8642`,
       )
     } else {
       console.warn(
@@ -245,8 +246,23 @@ const config = defineConfig(({ mode, command }) => {
 
     const spawnCommand = existsSync(daemonSrcEntry)
       ? {
-          commandName: 'npx',
-          args: ['tsx', 'watch', 'src/server.ts'],
+        commandName: 'npx',
+        args: ['tsx', 'watch', 'src/server.ts'],
+        options: {
+          cwd: daemonCwd,
+          env: {
+            ...process.env,
+            PORT: workspaceDaemonPort,
+            DB_PATH: workspaceDaemonDbPath,
+            ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY ?? '',
+          },
+          stdio: 'inherit' as const,
+        },
+      }
+      : existsSync(daemonDistEntry)
+        ? {
+          commandName: 'node',
+          args: ['dist/server.js'],
           options: {
             cwd: daemonCwd,
             env: {
@@ -258,21 +274,6 @@ const config = defineConfig(({ mode, command }) => {
             stdio: 'inherit' as const,
           },
         }
-      : existsSync(daemonDistEntry)
-        ? {
-            commandName: 'node',
-            args: ['dist/server.js'],
-            options: {
-              cwd: daemonCwd,
-              env: {
-                ...process.env,
-                PORT: workspaceDaemonPort,
-                DB_PATH: workspaceDaemonDbPath,
-                ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY ?? '',
-              },
-              stdio: 'inherit' as const,
-            },
-          }
         : null
 
     if (!spawnCommand) {
@@ -416,9 +417,9 @@ const config = defineConfig(({ mode, command }) => {
   // e.g. CLAUDE_ALLOWED_HOSTS=my-server.tail1234.ts.net,192.168.1.50
   const _allowedHosts: string[] | true = env.CLAUDE_ALLOWED_HOSTS?.trim()
     ? env
-        .CLAUDE_ALLOWED_HOSTS!.split(',')
-        .map((h) => h.trim())
-        .filter(Boolean)
+      .CLAUDE_ALLOWED_HOSTS!.split(',')
+      .map((h) => h.trim())
+      .filter(Boolean)
     : ['.ts.net'] // allow all Tailscale hostnames by default
   let proxyTarget = 'http://127.0.0.1:18789'
 
