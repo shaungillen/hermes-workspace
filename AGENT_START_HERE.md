@@ -1,5 +1,13 @@
 # AGENT START HERE
 
+> [!WARNING]
+> **DO NOT REDISCOVER KNOWN CONTEXT.**  
+> Read the state docs first. Do not run broad repository scans, recursive grep, web searches, MCP debugging, or architecture rediscovery unless explicitly requested.
+
+> [!IMPORTANT]
+> **Worker Node Federation is Phase 2 or later.**  
+> Do not activate, debug, or route tasks to Worker Node Federation until Phase 0 and Phase 1 local read-only Hermes pilots are complete and Shaun explicitly approves.
+
 Welcome to the **Hermes Workspace & state-docs worktree**. This workspace is the primary local agent control plane for the FieldWorks stack, running a persistent swarm of semantic workers coordinate by the Hermes Agent runtime.
 
 This document serves as the entrypoint for any agent landing in this workspace.

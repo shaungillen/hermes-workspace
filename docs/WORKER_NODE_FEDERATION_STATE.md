@@ -8,6 +8,10 @@
 
 ## 🌐 Overview & Core Principles
 
+> [!WARNING]
+> **Worker Node Federation is inactive and off-limits until Phase 2 or later.**  
+> It must not be used for live task execution, install work, MCP debugging, or compute delegation until Phase 0 and Phase 1 local Hermes validation are complete and Shaun gives explicit approval.
+
 Worker Node Federation is a **bounded, stateless execution extension** designed to offload heavy, isolated coding tasks to satellite machines running DeepSeek Coder 8B. 
 
 This model ensures that resource-intensive execution or long-running generation tasks do not saturate the primary local Hermes control plane.

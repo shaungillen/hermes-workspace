@@ -8,6 +8,10 @@
 
 ## 🧭 Core Model Policy
 
+> [!IMPORTANT]
+> **Antigravity model switching is manual.**  
+> Agents cannot switch the active Antigravity model automatically. Shaun must change the selected model in the Antigravity UI. If the selected model is too expensive, capacity failing, or inappropriate for the task, stop and output `MODEL SWITCH NEEDED` with the recommended model and resume prompt.
+
 Model routing across the Hermes Workspace and Worker Node Federation is divided into **four tiers** to balance local latency, inference cost, reasoning depth, and data privacy. 
 
 All automated model transitions must respect these tier boundaries and require a human greenlight when shifting security contexts.
