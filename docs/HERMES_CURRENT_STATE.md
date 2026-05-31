@@ -1,6 +1,6 @@
 # Hermes Current State
 
-**Last Updated:** 2026-05-22  
+**Last Updated:** 2026-05-31  
 **Status:** Runtime Active / Connected  
 **Worktree:** `~/WORKTREES/hermes-state-docs`
 
@@ -30,6 +30,28 @@
 *   `API_SERVER_ENABLED=true` has been successfully injected into `~/.hermes/.env`.
 *   The gateway was restarted and is listening on port `8642`.
 *   Workspace UI is connected to the gateway API backend, enabling swarm orchestration, streaming, and full chatbot functionality.
+
+---
+
+## 🛠️ Resolved Blocker: macOS Developer Toolchain (Xcode License)
+
+> [!NOTE]
+> **Status: RESOLVED**  
+> The macOS Xcode / Apple SDK license had not been accepted, which caused Git and developer-tool commands to drop into the Xcode license pager instead of executing normally. This blocked worktree creation and could affect services that call `git`, `xcrun`, `clang`, `make`, or native package builds.
+> 
+> *Note: This is documented as a resolved local developer-toolchain blocker, not as the confirmed root cause of every Hermes crash.*
+
+**Resolution:**
+Shaun ran:
+```bash
+sudo xcodebuild -license accept
+```
+
+**Verification Commands:**
+Use the following commands to confirm the fix:
+*   `xcodebuild -version`
+*   `git --version`
+*   `xcrun --find git`
 
 ---
 
