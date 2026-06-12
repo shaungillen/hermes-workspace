@@ -1,6 +1,6 @@
 # Hermes Current State
 
-**Last Updated:** 2026-05-31  
+**Last Updated:** 2026-06-02  
 **Status:** Runtime Active / Connected  
 **Worktree:** `~/WORKTREES/hermes-state-docs`
 
@@ -10,14 +10,17 @@
 
 | Service | Host/Port | PID | Status | Notes |
 |---|---|---|---|---|
-| **Hermes Workspace UI** | `localhost:3000` | 6853 | ✅ **RUNNING** | Node/Vite, serving main dashboard & chat interface |
-| **Hermes UI (Second Dev)** | `localhost:3001` | 7594 | ✅ **RUNNING** | Second Vite dev instance |
-| **Hermes Dashboard** | `localhost:9119` | 6653 | ✅ **RUNNING** | Responding to API probes at `/api/status` |
-| **Hermes Gateway** | `localhost:8642` | — | ✅ **RUNNING** | Active background process, HTTP listener enabled |
-| **Ollama Backend** | `localhost:11434` | — | ✅ **RUNNING** | Exposes local inference with 8 available models |
+| **Hermes Workspace UI** | `localhost:3000` | — | ✅ **RUNNING** | Node/Vite dev server started from `~/hermes-workspace` |
+| **Hermes Dashboard** | `localhost:9119` | — | ✅ **RUNNING** | Responding to API probes at `/api/status` |
+| **Hermes Gateway** | `localhost:8642` | 95213 | ✅ **RUNNING** | Active background process, HTTP API listener enabled |
+| **Ollama Backend** | `localhost:11434` | — | ✅ **RUNNING** | Exposes local inference with available models |
 | **LM Studio Backend** | `localhost:1234` | — | ❌ **DOWN** | Custom Qwen-Coder-7B server is suspended |
-| **BaseOS Dashboard Bridge** | `localhost:5001` | 1265 | ✅ **RUNNING** | Exposes `dashboard_bridge.py` endpoints |
-| **Worker Poller** | — | 1295 | ✅ **RUNNING** | Active background poller running `worker_poller.py` |
+| **BaseOS Dashboard Bridge** | `localhost:5001` | — | ✅ **RUNNING** | Exposes `dashboard_bridge.py` endpoints |
+| **Worker Poller** | — | — | ✅ **RUNNING** | Active background poller running `worker_poller.py` |
+
+> [!TIP]
+> **Unified Control Scripts & Runbook:**  
+> Start/stop/check the service stack using the scripts in `/Users/shaungillen/WORKTREES/hermes-state-docs/scripts/`. Full operational procedures are documented in the **[HERMES_STACK_RUNBOOK.md](file:///Users/shaungillen/WORKTREES/hermes-state-docs/docs/HERMES_STACK_RUNBOOK.md)**.
 
 ---
 
