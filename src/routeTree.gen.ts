@@ -26,6 +26,7 @@ import { Route as McpRouteImport } from './routes/mcp'
 import { Route as JobsRouteImport } from './routes/jobs'
 import { Route as HermesWorldRouteImport } from './routes/hermes-world'
 import { Route as FilesRouteImport } from './routes/files'
+import { Route as FieldworksRouteImport } from './routes/fieldworks'
 import { Route as EchoStudioRouteImport } from './routes/echo-studio'
 import { Route as EarlyAccessRouteImport } from './routes/early-access'
 import { Route as DashboardRouteImport } from './routes/dashboard'
@@ -253,6 +254,11 @@ const HermesWorldRoute = HermesWorldRouteImport.update({
 const FilesRoute = FilesRouteImport.update({
   id: '/files',
   path: '/files',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FieldworksRoute = FieldworksRouteImport.update({
+  id: '/fieldworks',
+  path: '/fieldworks',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EchoStudioRoute = EchoStudioRouteImport.update({
@@ -987,6 +993,7 @@ export interface FileRoutesByFullPath {
   '/dashboard': typeof DashboardRoute
   '/early-access': typeof EarlyAccessRoute
   '/echo-studio': typeof EchoStudioRoute
+  '/fieldworks': typeof FieldworksRoute
   '/files': typeof FilesRoute
   '/hermes-world': typeof HermesWorldRoute
   '/jobs': typeof JobsRoute
@@ -1149,6 +1156,7 @@ export interface FileRoutesByTo {
   '/dashboard': typeof DashboardRoute
   '/early-access': typeof EarlyAccessRoute
   '/echo-studio': typeof EchoStudioRoute
+  '/fieldworks': typeof FieldworksRoute
   '/files': typeof FilesRoute
   '/hermes-world': typeof HermesWorldRoute
   '/jobs': typeof JobsRoute
@@ -1311,6 +1319,7 @@ export interface FileRoutesById {
   '/dashboard': typeof DashboardRoute
   '/early-access': typeof EarlyAccessRoute
   '/echo-studio': typeof EchoStudioRoute
+  '/fieldworks': typeof FieldworksRoute
   '/files': typeof FilesRoute
   '/hermes-world': typeof HermesWorldRoute
   '/jobs': typeof JobsRoute
@@ -1475,6 +1484,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/early-access'
     | '/echo-studio'
+    | '/fieldworks'
     | '/files'
     | '/hermes-world'
     | '/jobs'
@@ -1637,6 +1647,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/early-access'
     | '/echo-studio'
+    | '/fieldworks'
     | '/files'
     | '/hermes-world'
     | '/jobs'
@@ -1798,6 +1809,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/early-access'
     | '/echo-studio'
+    | '/fieldworks'
     | '/files'
     | '/hermes-world'
     | '/jobs'
@@ -1961,6 +1973,7 @@ export interface RootRouteChildren {
   DashboardRoute: typeof DashboardRoute
   EarlyAccessRoute: typeof EarlyAccessRoute
   EchoStudioRoute: typeof EchoStudioRoute
+  FieldworksRoute: typeof FieldworksRoute
   FilesRoute: typeof FilesRoute
   HermesWorldRoute: typeof HermesWorldRoute
   JobsRoute: typeof JobsRoute
@@ -2204,6 +2217,13 @@ declare module '@tanstack/react-router' {
       path: '/files'
       fullPath: '/files'
       preLoaderRoute: typeof FilesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fieldworks': {
+      id: '/fieldworks'
+      path: '/fieldworks'
+      fullPath: '/fieldworks'
+      preLoaderRoute: typeof FieldworksRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/echo-studio': {
@@ -3430,6 +3450,7 @@ const rootRouteChildren: RootRouteChildren = {
   DashboardRoute: DashboardRoute,
   EarlyAccessRoute: EarlyAccessRoute,
   EchoStudioRoute: EchoStudioRoute,
+  FieldworksRoute: FieldworksRoute,
   FilesRoute: FilesRoute,
   HermesWorldRoute: HermesWorldRoute,
   JobsRoute: JobsRoute,

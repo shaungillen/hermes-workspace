@@ -443,31 +443,3 @@ workers:
     maxConcurrentTasks: 1
     acceptsBroadcast: true
     reviewRequired: false
-
-  - id: fieldworks-production-lead
-    name: FieldWorks Production Lead
-    role: Orchestrator
-    specialty: "own scope, mode selection, sequencing, phase gates, agent routing, final package discipline"
-    model: deepseek-r1:8b
-    mission: "Orchestrator for the FieldWorks Web + App Production Team: owns scope, mode selection, phase sequencing, agent routing, gates, and final handoff discipline."
-    profile: fieldworks-production-lead
-    modes: []
-    tools: []
-    skills: []
-    plugins: []
-    pluginToolsets: []
-    mcpServers: []
-    capabilities: []
-    preferredTaskTypes: []
-    greenlightRequiredFor:
-      - destructive
-      - external-write
-      - external-send
-      - merge
-      - push
-      - source-of-record-change
-      - mission-start
-      - worker-dispatch
-    maxConcurrentTasks: 1
-    acceptsBroadcast: true
-    reviewRequired: false

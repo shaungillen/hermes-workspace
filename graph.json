@@ -1,0 +1,6373 @@
+{
+  "project_root": "/Users/shaungillen/hermes-workspace",
+  "name": "hermes-workspace",
+  "files": [
+    {
+      "path": "pnpm-lock.yaml",
+      "size": 462983,
+      "ext": ".yaml"
+    },
+    {
+      "path": "electron-builder.config.cjs",
+      "size": 1378,
+      "ext": ".cjs"
+    },
+    {
+      "path": "LICENSE",
+      "size": 1076,
+      "ext": ""
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size": 3528,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "Dockerfile",
+      "size": 2649,
+      "ext": ""
+    },
+    {
+      "path": "wrangler.jsonc",
+      "size": 407,
+      "ext": ".jsonc"
+    },
+    {
+      "path": "install.sh",
+      "size": 11008,
+      "ext": ".sh"
+    },
+    {
+      "path": "server-entry.js",
+      "size": 7930,
+      "ext": ".js",
+      "description": "JavaScript source file"
+    },
+    {
+      "path": "docker-compose.dev.yml",
+      "size": 1088,
+      "ext": ".yml"
+    },
+    {
+      "path": "FUTURE-FEATURES.md",
+      "size": 4854,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "README.md",
+      "size": 32319,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "prettier.config.js",
+      "size": 158,
+      "ext": ".js",
+      "description": "JavaScript source file"
+    },
+    {
+      "path": "package.json",
+      "size": 3864,
+      "ext": ".json",
+      "description": "Configuration/Data"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "size": 1366,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "tsconfig.json",
+      "size": 711,
+      "ext": ".json",
+      "description": "Configuration/Data"
+    },
+    {
+      "path": "docker-compose.yml",
+      "size": 5505,
+      "ext": ".yml"
+    },
+    {
+      "path": "eslint.config.js",
+      "size": 1108,
+      "ext": ".js",
+      "description": "JavaScript source file"
+    },
+    {
+      "path": "AGENTS.md",
+      "size": 3216,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "vite.config.ts",
+      "size": 24234,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "FEATURES-INVENTORY.md",
+      "size": 31429,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "SECURITY.md",
+      "size": 2922,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "swarm.yaml",
+      "size": 10165,
+      "ext": ".yaml"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "size": 96,
+      "ext": ".yaml"
+    },
+    {
+      "path": "playground-ws-worker/pnpm-lock.yaml",
+      "size": 31302,
+      "ext": ".yaml"
+    },
+    {
+      "path": "playground-ws-worker/README.md",
+      "size": 3379,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "playground-ws-worker/package.json",
+      "size": 324,
+      "ext": ".json",
+      "description": "Configuration/Data"
+    },
+    {
+      "path": "playground-ws-worker/tsconfig.json",
+      "size": 334,
+      "ext": ".json",
+      "description": "Configuration/Data"
+    },
+    {
+      "path": "playground-ws-worker/wrangler.toml",
+      "size": 374,
+      "ext": ".toml"
+    },
+    {
+      "path": "macos/com.hermes.workspace.plist.template",
+      "size": 1581,
+      "ext": ".template"
+    },
+    {
+      "path": "screenshots/hermes-world-landing-pass.png",
+      "size": 1243386,
+      "ext": ".png"
+    },
+    {
+      "path": "screenshots/scifi-theme.png",
+      "size": 454104,
+      "ext": ".png"
+    },
+    {
+      "path": "screenshots/SciFi.png",
+      "size": 454104,
+      "ext": ".png"
+    },
+    {
+      "path": "screenshots/hermesworld-accessibility-mobile.png",
+      "size": 31497,
+      "ext": ".png"
+    },
+    {
+      "path": "screenshots/hermesworld-accessibility-desktop.png",
+      "size": 37312,
+      "ext": ".png"
+    },
+    {
+      "path": "memory/2026-05-05.md",
+      "size": 1751,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "memory/2026-05-04.md",
+      "size": 1404,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/i18n-contributing.md",
+      "size": 1694,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermes-workspace-naming-contract.md",
+      "size": 1920,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/agent-authored-ui-state.md",
+      "size": 842,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/troubleshooting.md",
+      "size": 4608,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/AGENT-PAIRING.md",
+      "size": 8901,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/swarm2-autopilot-orchestration-spec.md",
+      "size": 8925,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/tool-artifacts-context-plan.md",
+      "size": 10407,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/release-2.1.0.md",
+      "size": 2256,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/swarm2-agent-ide-spec.md",
+      "size": 13204,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/conductor-bug-log.md",
+      "size": 951,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/swarm2-memory-framework-spec.md",
+      "size": 10670,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/swarm2-frankengpu-control-plane.md",
+      "size": 3131,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/multi-gateway-pool-spec.md",
+      "size": 16123,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/swarm2-worker-lifecycle-compaction-spec.md",
+      "size": 3358,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/claude-openai-compat-spec.md",
+      "size": 10928,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/docker.md",
+      "size": 6935,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/desktop-update-system.md",
+      "size": 1883,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "public/claude-avatar.png",
+      "size": 83740,
+      "ext": ".png"
+    },
+    {
+      "path": "public/claude-favicon.ico",
+      "size": 1817,
+      "ext": ".ico"
+    },
+    {
+      "path": "public/cover.webp",
+      "size": 85361,
+      "ext": ".webp"
+    },
+    {
+      "path": "public/claude-caduceus.png",
+      "size": 201882,
+      "ext": ".png"
+    },
+    {
+      "path": "public/apple-touch-icon.png",
+      "size": 22691,
+      "ext": ".png"
+    },
+    {
+      "path": "public/logo-icon.png",
+      "size": 49648,
+      "ext": ".png"
+    },
+    {
+      "path": "public/logo-icon.jpg",
+      "size": 8297,
+      "ext": ".jpg"
+    },
+    {
+      "path": "public/claude-avatar.webp",
+      "size": 15680,
+      "ext": ".webp"
+    },
+    {
+      "path": "public/claude-icon-192.png",
+      "size": 24996,
+      "ext": ".png"
+    },
+    {
+      "path": "public/hermesworld-logos-reference.png",
+      "size": 1493056,
+      "ext": ".png"
+    },
+    {
+      "path": "public/social-preview.png",
+      "size": 83740,
+      "ext": ".png"
+    },
+    {
+      "path": "public/claude-logo.png",
+      "size": 1319989,
+      "ext": ".png"
+    },
+    {
+      "path": "public/claude-banner-light.png",
+      "size": 8664,
+      "ext": ".png"
+    },
+    {
+      "path": "public/claude-crest.svg",
+      "size": 1277,
+      "ext": ".svg"
+    },
+    {
+      "path": "public/manifest.json",
+      "size": 795,
+      "ext": ".json",
+      "description": "Configuration/Data"
+    },
+    {
+      "path": "public/claude-banner.png",
+      "size": 12333,
+      "ext": ".png"
+    },
+    {
+      "path": "public/cover.png",
+      "size": 83740,
+      "ext": ".png"
+    },
+    {
+      "path": "public/hermesworld-logo.svg",
+      "size": 3448,
+      "ext": ".svg"
+    },
+    {
+      "path": "public/test-streaming.html",
+      "size": 2910,
+      "ext": ".html"
+    },
+    {
+      "path": "public/robots.txt",
+      "size": 67,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/claude-icon.png",
+      "size": 1817,
+      "ext": ".png"
+    },
+    {
+      "path": "public/claude-chat.sh",
+      "size": 598,
+      "ext": ".sh"
+    },
+    {
+      "path": "public/hermesworld-world.png",
+      "size": 2612917,
+      "ext": ".png"
+    },
+    {
+      "path": "public/claude-icon-512.png",
+      "size": 132551,
+      "ext": ".png"
+    },
+    {
+      "path": "public/favicon.svg",
+      "size": 2552,
+      "ext": ".svg"
+    },
+    {
+      "path": "public/sw.js",
+      "size": 752,
+      "ext": ".js",
+      "description": "JavaScript source file"
+    },
+    {
+      "path": "scripts/build-hermesworld-static.py",
+      "size": 45981,
+      "ext": ".py",
+      "description": "Python script"
+    },
+    {
+      "path": "scripts/ascii-trailer.sh",
+      "size": 2334,
+      "ext": ".sh"
+    },
+    {
+      "path": "scripts/generate-pwa-icons.js",
+      "size": 1326,
+      "ext": ".js",
+      "description": "JavaScript source file"
+    },
+    {
+      "path": "scripts/stop-stable.sh",
+      "size": 736,
+      "ext": ".sh"
+    },
+    {
+      "path": "scripts/playground-ws.mjs",
+      "size": 3170,
+      "ext": ".mjs"
+    },
+    {
+      "path": "scripts/skills-search.py",
+      "size": 1445,
+      "ext": ".py",
+      "description": "Python script"
+    },
+    {
+      "path": "scripts/swarm-env-check.sh",
+      "size": 1031,
+      "ext": ".sh"
+    },
+    {
+      "path": "scripts/seed-runtime.mjs",
+      "size": 2290,
+      "ext": ".mjs"
+    },
+    {
+      "path": "scripts/start-stable.sh",
+      "size": 1944,
+      "ext": ".sh"
+    },
+    {
+      "path": "scripts/managed-companion-smoke.mjs",
+      "size": 1596,
+      "ext": ".mjs"
+    },
+    {
+      "path": "scripts/dashboard-smoke.mjs",
+      "size": 2103,
+      "ext": ".mjs"
+    },
+    {
+      "path": "scripts/start-hermes-workspace.ps1",
+      "size": 3272,
+      "ext": ".ps1"
+    },
+    {
+      "path": "scripts/swarm-lifecycle-sweep.sh",
+      "size": 978,
+      "ext": ".sh"
+    },
+    {
+      "path": "electron/preload.cjs",
+      "size": 1136,
+      "ext": ".cjs"
+    },
+    {
+      "path": "electron/prod-server.cjs",
+      "size": 4228,
+      "ext": ".cjs"
+    },
+    {
+      "path": "electron/server-bundle.cjs",
+      "size": 20273405,
+      "ext": ".cjs"
+    },
+    {
+      "path": "electron/main.cjs",
+      "size": 10168,
+      "ext": ".cjs"
+    },
+    {
+      "path": "assets/icon.png",
+      "size": 132551,
+      "ext": ".png"
+    },
+    {
+      "path": "assets/mcp-presets.seed.json",
+      "size": 3651,
+      "ext": ".json",
+      "description": "Configuration/Data"
+    },
+    {
+      "path": "src/styles.css",
+      "size": 44397,
+      "ext": ".css"
+    },
+    {
+      "path": "src/scifi-theme.css",
+      "size": 16973,
+      "ext": ".css"
+    },
+    {
+      "path": "src/router.tsx",
+      "size": 350,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routeTree.gen.ts",
+      "size": 120106,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/router-route-resolution.test.ts",
+      "size": 477,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/logo.svg",
+      "size": 964,
+      "ext": ".svg"
+    },
+    {
+      "path": "src/types/recharts.d.ts",
+      "size": 558,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/types/mcp.ts",
+      "size": 2235,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/types/mcp-input.ts",
+      "size": 926,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/types/ws.d.ts",
+      "size": 1030,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/stores/session-model-store.ts",
+      "size": 1790,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/stores/terminal-panel-store.ts",
+      "size": 5183,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/stores/chat-store.test.ts",
+      "size": 1873,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/stores/chat-store.ts",
+      "size": 46811,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/stores/task-store.ts",
+      "size": 8812,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/stores/chat-activity-store.ts",
+      "size": 4400,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/stores/mission-store.ts",
+      "size": 21534,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/stores/workspace-store.ts",
+      "size": 2970,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/stores/agent-swarm-store.ts",
+      "size": 5720,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-tools-cache.ts",
+      "size": 5186,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-presets-store.ts",
+      "size": 17817,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/claude-paths.ts",
+      "size": 1950,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-presets-store.test.ts",
+      "size": 12496,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-profile-config.ts",
+      "size": 8440,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-lifecycle.ts",
+      "size": 12877,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-environment.ts",
+      "size": 3116,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-missions.ts",
+      "size": 18332,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/claude-api.ts",
+      "size": 18131,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/terminal-sessions.ts",
+      "size": 6201,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/knowledge-browser.ts",
+      "size": 16261,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/hermes-config-route.ts",
+      "size": 6697,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/profiles-browser.ts",
+      "size": 14350,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-normalize.test.ts",
+      "size": 11462,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/auth-middleware.ts",
+      "size": 9101,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-chat-reader.ts",
+      "size": 6067,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-model-resolver.ts",
+      "size": 4048,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/claude-tasks-backend.test.ts",
+      "size": 3749,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-foundation.test.ts",
+      "size": 8685,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/session-utils.ts",
+      "size": 2237,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/openai-compat-api.test.ts",
+      "size": 2469,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-model-resolver.test.ts",
+      "size": 2709,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/portable-history.ts",
+      "size": 864,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/chat-event-bus.ts",
+      "size": 2238,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/openai-compat-api.ts",
+      "size": 9676,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-cli-bridge.ts",
+      "size": 5985,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/hermes-cron-profiles.ts",
+      "size": 10098,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/integration-detection.test.ts",
+      "size": 4917,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/stt-transcription.test.ts",
+      "size": 1547,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/hermes-config-store.ts",
+      "size": 7796,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/chat-backends.ts",
+      "size": 3668,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/claude-tasks-backend.ts",
+      "size": 4529,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/send-run-tracker.ts",
+      "size": 715,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/conductor-mission-sanitize.test.ts",
+      "size": 1865,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-roster.ts",
+      "size": 5505,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/local-provider-discovery.ts",
+      "size": 8792,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/tasks-store.ts",
+      "size": 5299,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/dashboard-aggregator.test.ts",
+      "size": 14210,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-mode.ts",
+      "size": 1791,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/responses-api.ts",
+      "size": 8737,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/tool-artifacts-store.ts",
+      "size": 8113,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/context-usage.ts",
+      "size": 16916,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/local-session-store.ts",
+      "size": 3425,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-chat-reader.test.ts",
+      "size": 749,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/update-system.ts",
+      "size": 18388,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/run-store.test.ts",
+      "size": 1439,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-mode.test.ts",
+      "size": 1519,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/conductor-mission-sanitize.ts",
+      "size": 2120,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/rate-limit.test.ts",
+      "size": 1517,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/run-store.ts",
+      "size": 6491,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-notifications.test.ts",
+      "size": 9025,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-input-validate.ts",
+      "size": 4946,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/hermes-config-store.test.ts",
+      "size": 4584,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-kanban-store.ts",
+      "size": 5981,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/gateway-capabilities.ts",
+      "size": 31927,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/pty-helper.py",
+      "size": 3550,
+      "ext": ".py",
+      "description": "Python script"
+    },
+    {
+      "path": "src/server/mcp-input-validate.test.ts",
+      "size": 3427,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-memory.ts",
+      "size": 21814,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-memory.test.ts",
+      "size": 3537,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/claude-agent.ts",
+      "size": 5987,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/kanban-dashboard-proxy.ts",
+      "size": 5991,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-tools-cache.test.ts",
+      "size": 5953,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/name-reservations.ts",
+      "size": 10171,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/name-reservations.test.ts",
+      "size": 6703,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub-sources-store.ts",
+      "size": 20256,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/provider-usage.ts",
+      "size": 28110,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-profile-config.test.ts",
+      "size": 6174,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/memory-browser.ts",
+      "size": 5089,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-foundation.ts",
+      "size": 21134,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/dashboard-aggregator.ts",
+      "size": 33424,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/hermes-config-migration.test.ts",
+      "size": 2163,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/hermes-config-migration.ts",
+      "size": 8594,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-roster.test.ts",
+      "size": 2527,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-checkpoints.test.ts",
+      "size": 1113,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub-sources-store.test.ts",
+      "size": 13259,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/claude-dashboard-api.ts",
+      "size": 10540,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-checkpoints.ts",
+      "size": 3352,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/update-system.test.ts",
+      "size": 645,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/rate-limit.ts",
+      "size": 3415,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/portable-history.test.ts",
+      "size": 1305,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/gateway.ts",
+      "size": 27539,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/kanban-backend.test.ts",
+      "size": 12846,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/tool-artifacts-store.test.ts",
+      "size": 1660,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/plugins-browser.ts",
+      "size": 2880,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-normalize.ts",
+      "size": 14515,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/knowledge-config.ts",
+      "size": 1866,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/profiles-browser.test.ts",
+      "size": 2652,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-notifications.ts",
+      "size": 9890,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/stt-transcription.ts",
+      "size": 4311,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/kanban-backend.ts",
+      "size": 21668,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/swarm-missions.test.ts",
+      "size": 12212,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/chat-mode.ts",
+      "size": 390,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/integration-detection.ts",
+      "size": 13632,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/auth-middleware.test.ts",
+      "size": 3406,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/utils/generate-session-title.ts",
+      "size": 10446,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/dashboard-overflow-panel.tsx",
+      "size": 5729,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/-mcp-nav.test.tsx",
+      "size": 1080,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/error-boundary.tsx",
+      "size": 2073,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/provider-logo.tsx",
+      "size": 1904,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-card.tsx",
+      "size": 5224,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/chat-panel-toggle.tsx",
+      "size": 1958,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/keyboard-shortcuts-modal.tsx",
+      "size": 6135,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/attachment-preview.tsx",
+      "size": 4739,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/claude-health-banner.tsx",
+      "size": 2174,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/model-suggestion-toast.tsx",
+      "size": 2817,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/system-metrics-footer.tsx",
+      "size": 5531,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/context-meter.tsx",
+      "size": 3811,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/manage-modes-modal.tsx",
+      "size": 9185,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/mobile-sessions-panel.tsx",
+      "size": 5269,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/loading-indicator.tsx",
+      "size": 2361,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/mobile-page-header.tsx",
+      "size": 1713,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/status-indicator.tsx",
+      "size": 5098,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/claude-reconnect-banner.tsx",
+      "size": 9496,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/empty-state.tsx",
+      "size": 1123,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/workspace-shell.tsx",
+      "size": 17828,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/workflow-help-modal.tsx",
+      "size": 3182,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/feature-not-ready.tsx",
+      "size": 2857,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/command-palette.tsx",
+      "size": 16721,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/rename-mode-dialog.tsx",
+      "size": 4790,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/global-shortcut-listener.tsx",
+      "size": 149,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/slash-command-menu.tsx",
+      "size": 4787,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/chat-panel.tsx",
+      "size": 9644,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/connection-overlay.tsx",
+      "size": 316,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/slash-command-menu.test.tsx",
+      "size": 1261,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/terminal-panel.tsx",
+      "size": 4241,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/attachment-button.tsx",
+      "size": 7245,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/export-menu.tsx",
+      "size": 2519,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/save-mode-dialog.tsx",
+      "size": 5610,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/workspace-shell.test.ts",
+      "size": 1184,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/connection-startup-screen.tsx",
+      "size": 13960,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/provider-model-icon.tsx",
+      "size": 2989,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/logo-loader.tsx",
+      "size": 408,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/backend-unavailable-state.tsx",
+      "size": 1233,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/mode-selector.tsx",
+      "size": 9569,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/update-center-notifier.tsx",
+      "size": 17529,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/apply-mode-dialog.tsx",
+      "size": 3058,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/mobile-tab-bar.tsx",
+      "size": 9814,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/theme-toggle.tsx",
+      "size": 3104,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/mobile-hamburger-menu.tsx",
+      "size": 11544,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-avatar.tsx",
+      "size": 4397,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/error-toast.tsx",
+      "size": 3602,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/terminal-shortcut-listener.tsx",
+      "size": 777,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/orchestrator-avatar.tsx",
+      "size": 49813,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-agent-outputs.ts",
+      "size": 1729,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-voice-recorder.ts",
+      "size": 4342,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-agent-view.ts",
+      "size": 22790,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-agent-behaviors.ts",
+      "size": 13031,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-mobile-keyboard.ts",
+      "size": 4036,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-sounds.ts",
+      "size": 4404,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-orchestrator-state.ts",
+      "size": 746,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-chat-settings.ts",
+      "size": 5658,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-voice-input.ts",
+      "size": 7803,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-crew-status.ts",
+      "size": 2432,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-pinned-sessions.ts",
+      "size": 1394,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-cli-agents.ts",
+      "size": 2078,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-gateway-caps.ts",
+      "size": 944,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-onboarding.ts",
+      "size": 2092,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-page-title.ts",
+      "size": 406,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-feature-capability.ts",
+      "size": 1770,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-settings.ts",
+      "size": 2968,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-swipe-navigation.ts",
+      "size": 4256,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-pull-to-refresh.ts",
+      "size": 2491,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-feature-available.ts",
+      "size": 610,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-search-modal.ts",
+      "size": 2627,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-research-card.ts",
+      "size": 783,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-chat-mode.ts",
+      "size": 869,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-search-data.ts",
+      "size": 8118,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-swarm-chat.ts",
+      "size": 3538,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-chat-stream.ts",
+      "size": 716,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-modes.ts",
+      "size": 4623,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-global-shortcuts.ts",
+      "size": 2366,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-model-suggestions.ts",
+      "size": 8602,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-tap-debug.ts",
+      "size": 4992,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/hooks/use-pinned-models.ts",
+      "size": 1530,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/active-users.ts",
+      "size": 1800,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/provider-catalog.ts",
+      "size": 5367,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/workspace-message-scope.test.ts",
+      "size": 1271,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/accent-colors.ts",
+      "size": 339,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/claude-auth.ts",
+      "size": 835,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/format-model-name.ts",
+      "size": 2898,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/feature-gates.ts",
+      "size": 2611,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/model-info.ts",
+      "size": 3169,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/clipboard.ts",
+      "size": 993,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/i18n.ts",
+      "size": 10505,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/send-stream-session-headers.ts",
+      "size": 1463,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/local-chat-threads.ts",
+      "size": 2207,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/model-info.test.ts",
+      "size": 1346,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/agent-personas.ts",
+      "size": 5859,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/gateway-api.ts",
+      "size": 14165,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "size": 193,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/approvals-store.ts",
+      "size": 785,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/stt-config.ts",
+      "size": 324,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/model-types.ts",
+      "size": 409,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/strip-queued-wrapper.ts",
+      "size": 501,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/connection-errors.ts",
+      "size": 5458,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/format-session-name.ts",
+      "size": 1930,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/tasks-api.ts",
+      "size": 8730,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/workspace-checkpoints.ts",
+      "size": 19237,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/jobs-api.ts",
+      "size": 9744,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/connection-errors.test.ts",
+      "size": 5789,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/cron-api.ts",
+      "size": 10355,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/haptics.ts",
+      "size": 80,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/workspace-agents.ts",
+      "size": 5237,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/feature-gates.test.ts",
+      "size": 679,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/theme.ts",
+      "size": 4220,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/sounds.ts",
+      "size": 6950,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/workspace-message-scope.ts",
+      "size": 1009,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/i18n.test.ts",
+      "size": 1937,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/jobs-api.test.ts",
+      "size": 3271,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/stt-config.test.ts",
+      "size": 545,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/send-stream-session-headers.test.ts",
+      "size": 1634,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/settings.tsx",
+      "size": 208,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/index.tsx",
+      "size": 312,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/__root.tsx",
+      "size": 18817,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/-root-layout-state.ts",
+      "size": 909,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/world.tsx",
+      "size": 388,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/dashboard.tsx",
+      "size": 370,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/vt-capital.tsx",
+      "size": 364,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/files.tsx",
+      "size": 4981,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/terminal.tsx",
+      "size": 1295,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/-swarm-routes.test.ts",
+      "size": 730,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/agora.tsx",
+      "size": 338,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/tasks.tsx",
+      "size": 465,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/hermes-world.tsx",
+      "size": 407,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/-root-layout-utils.test.ts",
+      "size": 452,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/-root-runtime-guards.test.ts",
+      "size": 1019,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/operations.tsx",
+      "size": 1496,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/playground.tsx",
+      "size": 380,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/jobs.tsx",
+      "size": 720,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/swarm.tsx",
+      "size": 1449,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/mcp.tsx",
+      "size": 805,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/early-access.tsx",
+      "size": 5445,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/conductor.tsx",
+      "size": 253,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/$.tsx",
+      "size": 3106,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/skills.tsx",
+      "size": 731,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/-root-layout-state.test.ts",
+      "size": 2011,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/profiles.tsx",
+      "size": 1661,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/reserve.tsx",
+      "size": 10848,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/swarm2.tsx",
+      "size": 1477,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/memory.tsx",
+      "size": 2937,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/settings/index.tsx",
+      "size": 105543,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/settings/providers.tsx",
+      "size": 381,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/chat/index.tsx",
+      "size": 651,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/chat/$sessionKey.tsx",
+      "size": 4689,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-orchestrator-loop.ts",
+      "size": 19466,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/-context-usage.test.ts",
+      "size": 10678,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/history.ts",
+      "size": 5110,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/conductor-stop.ts",
+      "size": 4557,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/start-agent.ts",
+      "size": 615,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-dispatch.ts",
+      "size": 39603,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-lifecycle.ts",
+      "size": 2610,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/ping.ts",
+      "size": 1312,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-environment.ts",
+      "size": 640,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-missions.ts",
+      "size": 5119,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/session-status.ts",
+      "size": 7612,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/claude-tasks.ts",
+      "size": 2696,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/hermes-tasks.ts",
+      "size": 2813,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/integrations.ts",
+      "size": 778,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-runtime.ts",
+      "size": 8813,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/playground-npc.ts",
+      "size": 8752,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/send-stream.ts",
+      "size": 64502,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/connection-settings.ts",
+      "size": 2786,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/workspace.ts",
+      "size": 12678,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/artifacts.ts",
+      "size": 892,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/claude-tasks.$taskId.ts",
+      "size": 3671,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/terminal-input.ts",
+      "size": 2017,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-roster.ts",
+      "size": 1603,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/-swarm-dispatch.test.ts",
+      "size": 5687,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-chat.ts",
+      "size": 1936,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/transcribe.ts",
+      "size": 3620,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/claude-config.ts",
+      "size": 9587,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/session-send.ts",
+      "size": 2585,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/context-usage.ts",
+      "size": 779,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/mcp.ts",
+      "size": 9823,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/crew-status.ts",
+      "size": 10420,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/conductor-spawn.ts",
+      "size": 17245,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-kanban.ts",
+      "size": 3482,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/start-claude.ts",
+      "size": 863,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/hermes-tasks.$taskId.ts",
+      "size": 7695,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/claude-update.ts",
+      "size": 4641,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-tmux-scroll.ts",
+      "size": 3875,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/gateway-status.ts",
+      "size": 995,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/terminal-resize.ts",
+      "size": 1975,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/-conductor-spawn.test.ts",
+      "size": 2755,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/local-providers.ts",
+      "size": 1239,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/-send-stream-live-tools.test.ts",
+      "size": 2518,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/session-history.ts",
+      "size": 2748,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/-send-stream-live-tools.ts",
+      "size": 3885,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/terminal-stream.ts",
+      "size": 5759,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-decompose.ts",
+      "size": 9700,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/claude-jobs.ts",
+      "size": 5353,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/oauth.poll-token.ts",
+      "size": 2945,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/claude-jobs.$jobId.ts",
+      "size": 10903,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-memory.ts",
+      "size": 5393,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/-models.test.ts",
+      "size": 1190,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-project.ts",
+      "size": 9335,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/-mcp-logs.test.ts",
+      "size": 2635,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/-workspace.test.ts",
+      "size": 4859,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/events.ts",
+      "size": 1920,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/playground-admin.ts",
+      "size": 2003,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/provider-usage.ts",
+      "size": 1697,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-direct-chat.ts",
+      "size": 10045,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/send.ts",
+      "size": 1131,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/-claude-update.test.ts",
+      "size": 1556,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/auth-check.ts",
+      "size": 1770,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/chat-events.ts",
+      "size": 3612,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/vt-capital.ts",
+      "size": 8859,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/connection-status.ts",
+      "size": 4969,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/memory.ts",
+      "size": 1113,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/gateway-reprobe.ts",
+      "size": 1380,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/system-metrics.ts",
+      "size": 2953,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/-hermes-config.test.ts",
+      "size": 5573,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/terminal-close.ts",
+      "size": 1450,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/-mcp.test.ts",
+      "size": 8435,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/skills.ts",
+      "size": 19301,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/models.ts",
+      "size": 8683,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/-files.test.ts",
+      "size": 2634,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/oauth.device-code.ts",
+      "size": 1752,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/paths.ts",
+      "size": 803,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-tmux-start.ts",
+      "size": 8690,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-tmux-stop.ts",
+      "size": 4227,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/-swarm-health.test.ts",
+      "size": 3006,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/media.ts",
+      "size": 3670,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/claude-tasks-assignees.ts",
+      "size": 5275,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-health.ts",
+      "size": 11641,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/files.ts",
+      "size": 13367,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-reports.ts",
+      "size": 1028,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/sessions.ts",
+      "size": 10092,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/preview-file.ts",
+      "size": 3478,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/plugins.ts",
+      "size": 572,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/artifacts.$artifactId.ts",
+      "size": 787,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/auth.ts",
+      "size": 2498,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-checkpoint.ts",
+      "size": 6223,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/reserve/confirm.tsx",
+      "size": 3050,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/memory/read.ts",
+      "size": 1187,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/memory/search.ts",
+      "size": 1016,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/memory/write.ts",
+      "size": 2664,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/memory/list.ts",
+      "size": 1083,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/update/status.ts",
+      "size": 551,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/update/workspace.ts",
+      "size": 1215,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/update/agent.ts",
+      "size": 1199,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/claude-proxy/$.ts",
+      "size": 4978,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/mcp/-hub-search.test.ts",
+      "size": 5045,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/mcp/hub-sources.ts",
+      "size": 2345,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/mcp/$name.ts",
+      "size": 4058,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/mcp/test.ts",
+      "size": 4749,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/mcp/discover.ts",
+      "size": 3292,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/mcp/-hub-sources.test.ts",
+      "size": 8630,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/mcp/presets.ts",
+      "size": 1577,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/mcp/-presets.test.ts",
+      "size": 3956,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/mcp/configure.ts",
+      "size": 5721,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/mcp/$name.logs.ts",
+      "size": 5250,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/mcp/hub-sources.$id.ts",
+      "size": 2451,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/mcp/hub-search.ts",
+      "size": 2613,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/dashboard/overview.ts",
+      "size": 3204,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/sessions/$sessionKey.active-run.ts",
+      "size": 1093,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/sessions/$sessionKey.status.ts",
+      "size": 1563,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/sessions/send.ts",
+      "size": 2701,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/__tests__/-models.test.ts",
+      "size": 4126,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/knowledge/read.ts",
+      "size": 1227,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/knowledge/search.ts",
+      "size": 965,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/knowledge/graph.ts",
+      "size": 847,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/knowledge/config.ts",
+      "size": 1710,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/knowledge/list.ts",
+      "size": 1169,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/knowledge/sync.ts",
+      "size": 1790,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/model/info.ts",
+      "size": 1847,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/swarm-memory/search.ts",
+      "size": 1239,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/skills/install.ts",
+      "size": 2368,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/skills/uninstall.ts",
+      "size": 2155,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/skills/hub-search.ts",
+      "size": 5698,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/skills/toggle.ts",
+      "size": 2622,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/profiles/read.ts",
+      "size": 958,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/profiles/activate.ts",
+      "size": 1108,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/profiles/rename.ts",
+      "size": 1210,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/profiles/create.ts",
+      "size": 1373,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/profiles/list.ts",
+      "size": 964,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/profiles/update.ts",
+      "size": 1361,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/profiles/delete.ts",
+      "size": 1098,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/hermesworld/reservations.ts",
+      "size": 2367,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/routes/api/hermesworld/reservations/confirm.ts",
+      "size": 1416,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/lib/config/costs.ts",
+      "size": 49,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/alert-dialog.tsx",
+      "size": 3018,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/tabs.tsx",
+      "size": 2808,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/preview-card.tsx",
+      "size": 1804,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/scroll-area.tsx",
+      "size": 2107,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/tooltip.tsx",
+      "size": 1665,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/switch.tsx",
+      "size": 2972,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/three-dots-spinner.tsx",
+      "size": 560,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/command.tsx",
+      "size": 7329,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/dialog.tsx",
+      "size": 2709,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/menu.tsx",
+      "size": 2105,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/button.tsx",
+      "size": 2269,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/toast.tsx",
+      "size": 2923,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/collapsible.tsx",
+      "size": 1452,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/input.tsx",
+      "size": 2622,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/braille-spinner.tsx",
+      "size": 4623,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/ui/autocomplete.tsx",
+      "size": 10235,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/settings/settings-sidebar.tsx",
+      "size": 3231,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/swarm/standalone-runtime-pane.tsx",
+      "size": 8043,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/swarm/agent-card.tsx",
+      "size": 11322,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/swarm/widget-rail.tsx",
+      "size": 11967,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/swarm/swarm-terminal.tsx",
+      "size": 14715,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/swarm/swarm-health-strip.tsx",
+      "size": 10068,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/swarm/router-chat.tsx",
+      "size": 24879,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/swarm/swarm-compose.tsx",
+      "size": 8270,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/swarm/topology-band.tsx",
+      "size": 6576,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/swarm/swarm-node-chat.tsx",
+      "size": 9628,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/memory-viewer/memory-types.ts",
+      "size": 379,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/memory-viewer/MemoryFileList.tsx",
+      "size": 7351,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/memory-viewer/MemorySearch.tsx",
+      "size": 2823,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/memory-viewer/MemoryEditor.tsx",
+      "size": 3947,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/memory-viewer/index.ts",
+      "size": 289,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/memory-viewer/MemoryPreview.tsx",
+      "size": 1485,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-swarm/agent-behaviors.ts",
+      "size": 4878,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-swarm/activity-panel.tsx",
+      "size": 9068,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-swarm/agent-character.tsx",
+      "size": 3387,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-swarm/isometric-office.tsx",
+      "size": 14845,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-swarm/session-display-name.ts",
+      "size": 1598,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-swarm/pixel-avatar.tsx",
+      "size": 7149,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/inspector/inspector-panel.tsx",
+      "size": 21911,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/inspector/activity-store.ts",
+      "size": 536,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/auth/login-screen.tsx",
+      "size": 4226,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-view/agent-progress.tsx",
+      "size": 1861,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-view/agent-stream-panel.tsx",
+      "size": 13715,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-view/agent-card.tsx",
+      "size": 25166,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-view/steer-modal.tsx",
+      "size": 3085,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-view/agent-view-panel.tsx",
+      "size": 59590,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-view/guardrails-modal.tsx",
+      "size": 8295,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-view/agent-registry-card.tsx",
+      "size": 9715,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-view/kill-confirm-dialog.tsx",
+      "size": 2433,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-view/swarm-connection-overlay.tsx",
+      "size": 4167,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/usage-meter/usage-meter-compact.tsx",
+      "size": 12302,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/usage-meter/usage-meter.tsx",
+      "size": 26877,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/usage-meter/usage-details-modal.tsx",
+      "size": 21337,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/usage-meter/index.ts",
+      "size": 43,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/usage-meter/context-alert-modal.tsx",
+      "size": 5979,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/terminal/debug-panel.tsx",
+      "size": 6096,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/terminal/terminal-panel.tsx",
+      "size": 18876,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/terminal/terminal-workspace.tsx",
+      "size": 31821,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/terminal/mobile-terminal-input.tsx",
+      "size": 3406,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/search/search-input.tsx",
+      "size": 1947,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/search/search-modal.tsx",
+      "size": 15305,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/search/quick-actions.tsx",
+      "size": 2257,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/search/search-result-item.tsx",
+      "size": 2745,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/search/search-results.tsx",
+      "size": 1263,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/mobile-prompt/MobileSetupModal.tsx",
+      "size": 10353,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/mobile-prompt/MobilePromptTrigger.tsx",
+      "size": 8087,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/settings-dialog/index.ts",
+      "size": 51,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/settings-dialog/settings-dialog.tsx",
+      "size": 91881,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/avatars/user-avatar.tsx",
+      "size": 2318,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/avatars/assistant-avatar.tsx",
+      "size": 591,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/avatars/index.ts",
+      "size": 96,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/file-explorer/file-explorer-sidebar.tsx",
+      "size": 20069,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/file-explorer/index.ts",
+      "size": 119,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/file-explorer/file-preview-dialog.tsx",
+      "size": 4487,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-chat/AgentChatHeader.tsx",
+      "size": 2293,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-chat/AgentChatModal.tsx",
+      "size": 10491,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-chat/AgentChatInput.tsx",
+      "size": 2440,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-chat/AgentChatMessages.tsx",
+      "size": 4450,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/chat-container.tsx",
+      "size": 4852,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/tool.tsx",
+      "size": 4340,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/markdown.tsx",
+      "size": 11976,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/markdown.test.ts",
+      "size": 1584,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/typing-indicator.tsx",
+      "size": 933,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/prompt-input.tsx",
+      "size": 10199,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/text-shimmer.tsx",
+      "size": 946,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/scroll-button.tsx",
+      "size": 2962,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/tool-indicator.tsx",
+      "size": 2181,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/thinking.tsx",
+      "size": 1390,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/message.tsx",
+      "size": 2629,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/thinking-indicator.tsx",
+      "size": 2257,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/cron-manager/cron-types.ts",
+      "size": 853,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/onboarding/claude-onboarding.tsx",
+      "size": 41885,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/onboarding/tour-steps.tsx",
+      "size": 2958,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/onboarding/onboarding-steps.ts",
+      "size": 1818,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/onboarding/setup-step-content.tsx",
+      "size": 8491,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/onboarding/onboarding-tour.test.ts",
+      "size": 668,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/onboarding/provider-select-step.tsx",
+      "size": 13602,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/onboarding/onboarding-tour.tsx",
+      "size": 4569,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/onboarding/index.ts",
+      "size": 92,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/onboarding/onboarding-wizard.tsx",
+      "size": 8968,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/code-block/index.tsx",
+      "size": 5661,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/prompt-kit/code-block/utils.ts",
+      "size": 1223,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/components/agent-view/hooks/use-agent-spawn.ts",
+      "size": 6591,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/settings/providers-screen.tsx",
+      "size": 56658,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm/swarm-screen.tsx",
+      "size": 20702,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/tasks/tasks-screen.tsx",
+      "size": 16120,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/tasks/task-card.tsx",
+      "size": 3557,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/tasks/tasks-ux.test.ts",
+      "size": 733,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/tasks/task-dialog.tsx",
+      "size": 7525,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/memory/knowledge-browser-screen.tsx",
+      "size": 50270,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/memory/memory-browser-screen.tsx",
+      "size": 22681,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/pending-send.ts",
+      "size": 7743,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/local-model-override.ts",
+      "size": 479,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/chat-queries.ts",
+      "size": 19076,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/utils.ts",
+      "size": 8655,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/chat-screen-utils.test.ts",
+      "size": 2617,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/chat-screen-utils.ts",
+      "size": 3033,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/types.ts",
+      "size": 2309,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/session-title-store.ts",
+      "size": 6474,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/chat-queries.reconcile-session.test.ts",
+      "size": 2531,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/chat-screen.tsx",
+      "size": 93075,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/chat-events.ts",
+      "size": 428,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/chat-ui.ts",
+      "size": 971,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/session-tombstones.ts",
+      "size": 1403,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/hermes-world-embed.tsx",
+      "size": 2136,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/hermes-world-landing.tsx",
+      "size": 28805,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/playground-screen.tsx",
+      "size": 61357,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/play-standalone.tsx",
+      "size": 1024,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agora/agora-screen.tsx",
+      "size": 4523,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/vt-capital/vt-capital-screen.tsx",
+      "size": 24664,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/vt-capital/vt-capital-screen.test.tsx",
+      "size": 4388,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/swarm2-memory-panel.tsx",
+      "size": 4725,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/swarm2-kanban-board.test.ts",
+      "size": 2497,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/swarm2-orchestrator-card.tsx",
+      "size": 21531,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/operational-worker-card.tsx",
+      "size": 27651,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/swarm2-reports-view.test.ts",
+      "size": 4689,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/swarm2-task-queue.tsx",
+      "size": 13829,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/swarm2-reports-view.tsx",
+      "size": 45282,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/swarm2-activity-feed.tsx",
+      "size": 5958,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/swarm2-artifacts.tsx",
+      "size": 7450,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/swarm2-screen.tsx",
+      "size": 76337,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/swarm2-kanban-board.tsx",
+      "size": 26537,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/swarm2-wires.tsx",
+      "size": 5535,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/swarm2-live-chat.tsx",
+      "size": 15027,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/swarm2/swarm2-screen.test.ts",
+      "size": 6964,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agents/agents-screen.tsx",
+      "size": 3946,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agents/operations-screen.tsx",
+      "size": 12027,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agents/agent-presets.ts",
+      "size": 6400,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/crew/crew-screen.tsx",
+      "size": 14853,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/-marketplace-placeholder-detection.test.tsx",
+      "size": 12910,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/mcp-screen.tsx",
+      "size": 16528,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/-mcp-oauth.test.ts",
+      "size": 550,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/-marketplace-install-confirmation.test.tsx",
+      "size": 13845,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/dashboard-screen.tsx",
+      "size": 44978,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/files/files-screen.tsx",
+      "size": 49907,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/files/files-screen.test.ts",
+      "size": 708,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/skills/workspace-skills-screen.tsx",
+      "size": 24933,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/skills/skills-screen.tsx",
+      "size": 43447,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/profiles/profiles-screen.tsx",
+      "size": 41531,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/jobs/edit-job-dialog.tsx",
+      "size": 19986,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/jobs/create-job-dialog.tsx",
+      "size": 19221,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/jobs/jobs-screen.tsx",
+      "size": 18902,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/agents-screen.tsx",
+      "size": 71269,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/agent-hub-layout.tsx",
+      "size": 5598,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/conductor.tsx",
+      "size": 127937,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/run-compare.tsx",
+      "size": 7332,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/template-picker.tsx",
+      "size": 7310,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/feed-event-bus.ts",
+      "size": 934,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/approvals-bell.tsx",
+      "size": 8905,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/office-view.tsx",
+      "size": 39156,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/agents-working-panel.tsx",
+      "size": 16872,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/cost-analytics.tsx",
+      "size": 9675,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/hub-utils.tsx",
+      "size": 19522,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/collaboration-presence.tsx",
+      "size": 6646,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/kanban-board.tsx",
+      "size": 18337,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/run-console.tsx",
+      "size": 47594,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/live-activity-panel.tsx",
+      "size": 20159,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/agent-output-panel.tsx",
+      "size": 27702,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/overview-tab.tsx",
+      "size": 15206,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/hub-constants.tsx",
+      "size": 10221,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/agent-hub-error-boundary.tsx",
+      "size": 1107,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/remote-agents-panel.tsx",
+      "size": 6961,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/mission-timeline.tsx",
+      "size": 7008,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/config-wizards.tsx",
+      "size": 59715,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/presence-indicator.tsx",
+      "size": 5288,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/use-live-feed-chat-stream.ts",
+      "size": 2038,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/approvals-page.tsx",
+      "size": 16376,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/streaming-text.tsx",
+      "size": 4578,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/agenda-view.tsx",
+      "size": 13820,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/export-mission.tsx",
+      "size": 4443,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/approvals-panel.tsx",
+      "size": 14493,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/live-feed-panel.tsx",
+      "size": 14694,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/calendar-view.tsx",
+      "size": 20437,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/inline-approval-card.tsx",
+      "size": 3441,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/task-board.tsx",
+      "size": 28391,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/reusable-snippets.tsx",
+      "size": 3814,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/team-panel.tsx",
+      "size": 23090,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/agent-chat-panel.tsx",
+      "size": 14378,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/mission-event-log.tsx",
+      "size": 11158,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/mission-control-tokens.ts",
+      "size": 3188,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/run-learnings.tsx",
+      "size": 9347,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/components/agent-avatar.tsx",
+      "size": 13657,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/hooks/use-conductor-gateway.ts",
+      "size": 61074,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/hooks/use-mission-orchestrator.ts",
+      "size": 36200,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/lib/mission-events.ts",
+      "size": 4372,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/lib/approvals-store.ts",
+      "size": 1448,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/lib/mission-checkpoint.ts",
+      "size": 2036,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/gateway/lib/workflow-templates.ts",
+      "size": 5537,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/token-mix-hour-card.tsx",
+      "size": 7976,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/sessions-intelligence-card.tsx",
+      "size": 11064,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/attention-marquee.tsx",
+      "size": 4819,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/ops-strip.tsx",
+      "size": 9297,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/logs-tail-card.tsx",
+      "size": 9658,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/edit-mode-panel.tsx",
+      "size": 5114,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/cost-ledger-card.tsx",
+      "size": 5321,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/hero-metrics.tsx",
+      "size": 9051,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/analytics-summary-card.tsx",
+      "size": 4128,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/skills-usage-card.tsx",
+      "size": 4504,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/operator-tip-card.tsx",
+      "size": 12282,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/analytics-chart-card.tsx",
+      "size": 19325,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/hour-of-day-card.tsx",
+      "size": 3521,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/achievements-card.tsx",
+      "size": 8162,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/model-info-card.tsx",
+      "size": 14670,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/velocity-card.tsx",
+      "size": 5227,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/cache-efficiency-card.tsx",
+      "size": 5204,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/provider-mix-card.tsx",
+      "size": 7634,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/analytics-hero-card.tsx",
+      "size": 20061,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/token-mix-card.tsx",
+      "size": 5021,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/top-models-card.tsx",
+      "size": 4778,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/active-model-kpi.tsx",
+      "size": 4915,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/attention-card.tsx",
+      "size": 5207,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/components/widget-shell.tsx",
+      "size": 2635,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/lib/insights.ts",
+      "size": 3462,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/lib/sessions-query.ts",
+      "size": 611,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/lib/sessions-query.test.ts",
+      "size": 1100,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/lib/formatters.ts",
+      "size": 5632,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/dashboard/lib/use-dashboard-layout.ts",
+      "size": 7855,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/components/install-confirmation-dialog.tsx",
+      "size": 12887,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/components/mcp-server-card.tsx",
+      "size": 7839,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/components/mcp-logs-drawer.tsx",
+      "size": 4660,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/components/mcp-server-dialog.tsx",
+      "size": 12985,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/components/sources-manager-dialog.tsx",
+      "size": 15383,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/hooks/use-mcp-hub.ts",
+      "size": 2510,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/hooks/use-mcp-oauth.ts",
+      "size": 3034,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/hooks/use-mcp-hub-sources.ts",
+      "size": 4113,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/hooks/use-mcp-presets.ts",
+      "size": 1402,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/hooks/use-mcp-servers.ts",
+      "size": 1133,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/hooks/use-mcp-mutations.ts",
+      "size": 2694,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/hooks/use-mcp-capability-mode.ts",
+      "size": 1219,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/mcp/lib/placeholder-detect.ts",
+      "size": 2734,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agents/components/operations-agent-detail.tsx",
+      "size": 11131,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agents/components/operations-new-agent-modal.tsx",
+      "size": 11785,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agents/components/operations-agent-card.tsx",
+      "size": 17433,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agents/components/full-outputs-view.tsx",
+      "size": 15139,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agents/components/operations-agent-chat.tsx",
+      "size": 4806,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agents/components/operations-agent-jobs.tsx",
+      "size": 8927,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agents/components/operations-settings-modal.tsx",
+      "size": 8873,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agents/components/orchestrator-card.tsx",
+      "size": 7366,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agents/hooks/use-agent-chat.ts",
+      "size": 3058,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agents/hooks/use-operations.ts",
+      "size": 23878,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agora/components/agora-chat-panel.tsx",
+      "size": 3159,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agora/components/agora-avatar.tsx",
+      "size": 3313,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agora/components/agora-online-panel.tsx",
+      "size": 3128,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agora/components/agora-world.tsx",
+      "size": 6100,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agora/components/agora-profile-drawer.tsx",
+      "size": 9573,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agora/hooks/use-agora-profile.ts",
+      "size": 2342,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agora/hooks/use-agora-room.ts",
+      "size": 8558,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agora/lib/agora-types.ts",
+      "size": 2146,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/agora/lib/agora-mock.ts",
+      "size": 2972,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/map-panel.tsx",
+      "size": 5307,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-chat.tsx",
+      "size": 8706,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-world-3d.tsx",
+      "size": 150015,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/wave-chat-panels.test.tsx",
+      "size": 3356,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/founder-vault-panel.tsx",
+      "size": 4749,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/player-character.tsx",
+      "size": 1247,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-minimap.tsx",
+      "size": 5115,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-hud.tsx",
+      "size": 12450,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-environment.tsx",
+      "size": 40088,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/settings-panel.tsx",
+      "size": 9327,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/inventory-panel.tsx",
+      "size": 6143,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-map.tsx",
+      "size": 6031,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/fps-counter.tsx",
+      "size": 1883,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/speech-bubble.tsx",
+      "size": 6648,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/keyboard-shortcuts-overlay.tsx",
+      "size": 3084,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-journal.tsx",
+      "size": 8304,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-npc-glb.tsx",
+      "size": 804,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-customizer.tsx",
+      "size": 12642,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-glb-body.tsx",
+      "size": 2942,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-hero-canvas.tsx",
+      "size": 6038,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/hermesworld-settings.ts",
+      "size": 6052,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-dialog.tsx",
+      "size": 13316,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/npc-character.tsx",
+      "size": 1826,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-online-chip.tsx",
+      "size": 5486,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-actionbar.tsx",
+      "size": 7740,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/quest-dialog-panel.tsx",
+      "size": 4860,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/speech-bubble-toast.test.tsx",
+      "size": 1733,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/toast.tsx",
+      "size": 4049,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-sidepanel.tsx",
+      "size": 25558,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/wave-chat-panels-showcase.tsx",
+      "size": 1628,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/photosensitive-warning-splash.tsx",
+      "size": 2920,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-settings.test.tsx",
+      "size": 2878,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-player-glb.tsx",
+      "size": 711,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/components/playground-admin-panel.tsx",
+      "size": 12804,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/hooks/use-playground-multiplayer.ts",
+      "size": 21661,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/hooks/use-playground-rpg.ts",
+      "size": 17058,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/lib/npc-dialog.ts",
+      "size": 19207,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/lib/playground-narration.ts",
+      "size": 6816,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/lib/character-config.ts",
+      "size": 3437,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/lib/playground-rpg.ts",
+      "size": 18212,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/lib/playground-actions.ts",
+      "size": 3096,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/lib/avatar-config.ts",
+      "size": 4178,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/lib/playground-bots.ts",
+      "size": 4280,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/playground/lib/playground-audio.ts",
+      "size": 10315,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/message-timestamp.tsx",
+      "size": 1229,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/message-item.artifacts.test.ts",
+      "size": 1199,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/chat-composer-model-switch.test.ts",
+      "size": 1487,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/message-item.streaming-activity.test.tsx",
+      "size": 2752,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/tui-activity-card.tsx",
+      "size": 14321,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/command-session.tsx",
+      "size": 5407,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/chat-composer-model-switch.ts",
+      "size": 1828,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/message-actions-bar.tsx",
+      "size": 3475,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/streaming-activity-ui.ts",
+      "size": 4382,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/context-meter.tsx",
+      "size": 2676,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/message-item.test.ts",
+      "size": 4283,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/chat-composer.tsx",
+      "size": 120114,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/chat-empty-state.tsx",
+      "size": 4571,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/context-bar.tsx",
+      "size": 6355,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/chat-message-list.test.tsx",
+      "size": 2219,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/message-item.tsx",
+      "size": 95834,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/message-status.tsx",
+      "size": 1207,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/research-card.tsx",
+      "size": 226,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/chat-header.tsx",
+      "size": 21493,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/scroll-to-bottom-button.tsx",
+      "size": 1796,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/chat-sidebar.tsx",
+      "size": 41456,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/providers-dialog.tsx",
+      "size": 1782,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/chat-composer-context-controls.test.ts",
+      "size": 1105,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/connection-status-message.tsx",
+      "size": 4600,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/chat-message-list.tsx",
+      "size": 73751,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-context-alert.ts",
+      "size": 3815,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-auto-session-title.ts",
+      "size": 5778,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-streaming-message.test.ts",
+      "size": 1433,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-chat-settings.ts",
+      "size": 2279,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-chat-measurements.ts",
+      "size": 2299,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-streaming-message.ts",
+      "size": 35156,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-delete-session.ts",
+      "size": 3257,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-session-shortcuts.ts",
+      "size": 1171,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-chat-mobile.ts",
+      "size": 751,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-rename-session.ts",
+      "size": 3732,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-chat-sessions.ts",
+      "size": 4625,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-active-run-check.ts",
+      "size": 2291,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-realtime-chat-history.ts",
+      "size": 21083,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-smooth-streaming-text.ts",
+      "size": 2265,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/hooks/use-chat-history.ts",
+      "size": 22839,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/sidebar/sidebar-sessions.tsx",
+      "size": 7155,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/sidebar/session-rename-dialog.tsx",
+      "size": 1940,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/sidebar/session-delete-dialog.tsx",
+      "size": 1184,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/chat/components/sidebar/session-item.tsx",
+      "size": 7801,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/settings/components/provider-icon.tsx",
+      "size": 1182,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/screens/settings/components/provider-wizard.tsx",
+      "size": 33954,
+      "ext": ".tsx",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/__tests__/gateway-capabilities.test.ts",
+      "size": 10784,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/__tests__/memory-browser.test.ts",
+      "size": 1686,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/__tests__/local-provider-discovery.test.ts",
+      "size": 3061,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/__tests__/profiles-browser.test.ts",
+      "size": 6224,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/-unified-search-user-sources.test.ts",
+      "size": 6307,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/-unified-search.test.ts",
+      "size": 8194,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/-trust.test.ts",
+      "size": 10273,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/trust.ts",
+      "size": 8199,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/-cache.test.ts",
+      "size": 4997,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/types.ts",
+      "size": 790,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/cache.ts",
+      "size": 6226,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/index.ts",
+      "size": 8590,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/lib/-ssrf-guard.test.ts",
+      "size": 6043,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/lib/ssrf-guard.ts",
+      "size": 4217,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/sources/-local-file.test.ts",
+      "size": 4007,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/sources/mcp-get.ts",
+      "size": 7643,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/sources/-mcp-get.test.ts",
+      "size": 8695,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/sources/local-file.ts",
+      "size": 1331,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/sources/generic-json.ts",
+      "size": 10825,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "src/server/mcp-hub/sources/-generic-json.test.ts",
+      "size": 16540,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    },
+    {
+      "path": "skills/workspace-dispatch/SKILL.md",
+      "size": 3367,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "public/screenshots/dashboard.png",
+      "size": 730091,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/chat-v3.png",
+      "size": 777311,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/files.png",
+      "size": 511634,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/command-palette.png",
+      "size": 376086,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/dashboard-v3.png",
+      "size": 467933,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/mobile-dashboard-v3.png",
+      "size": 284722,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/agent-hub-v3.png",
+      "size": 607261,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/chat-agent-hub.png",
+      "size": 460645,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/mission-control-v3.png",
+      "size": 512605,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/agent-hub.png",
+      "size": 757202,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/providers.png",
+      "size": 284987,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/chat.png",
+      "size": 232973,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/skills-browser.jpg",
+      "size": 64904,
+      "ext": ".jpg"
+    },
+    {
+      "path": "public/providers/nous.png",
+      "size": 17849,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/kimi.png",
+      "size": 3514,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/openai.png",
+      "size": 11297,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/nousresearch.png",
+      "size": 61,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/zhipu.png",
+      "size": 8041,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/atomic-chat.png",
+      "size": 203342,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/ollama.png",
+      "size": 8745,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/openrouter.png",
+      "size": 3928,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/anthropic.png",
+      "size": 3580,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/minimax.png",
+      "size": 5477,
+      "ext": ".png"
+    },
+    {
+      "path": "public/ascii-portraits/iris.txt",
+      "size": 41,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/nike.txt",
+      "size": 49,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/banker.txt",
+      "size": 73,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/eros.txt",
+      "size": 41,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/athena.txt",
+      "size": 81,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/_banner.txt",
+      "size": 391,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/chronos.txt",
+      "size": 77,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/_banner-doom.txt",
+      "size": 513,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/hermes.txt",
+      "size": 81,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/shopkeeper.txt",
+      "size": 121,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/trainer.txt",
+      "size": 69,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/recruiter.txt",
+      "size": 93,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/tavernkeeper.txt",
+      "size": 133,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/pan.txt",
+      "size": 41,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/artemis.txt",
+      "size": 89,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/ascii-portraits/apollo.txt",
+      "size": 69,
+      "ext": ".txt"
+    },
+    {
+      "path": "public/avatars-3d/README.md",
+      "size": 2555,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "public/avatars/eros.png",
+      "size": 2039587,
+      "ext": ".png"
+    },
+    {
+      "path": "public/avatars/athena.png",
+      "size": 1959574,
+      "ext": ".png"
+    },
+    {
+      "path": "public/avatars/chronos.png",
+      "size": 2193507,
+      "ext": ".png"
+    },
+    {
+      "path": "public/avatars/iris.png",
+      "size": 2070679,
+      "ext": ".png"
+    },
+    {
+      "path": "public/avatars/nike.png",
+      "size": 2171536,
+      "ext": ".png"
+    },
+    {
+      "path": "public/avatars/apollo.png",
+      "size": 2026378,
+      "ext": ".png"
+    },
+    {
+      "path": "public/avatars/pan.png",
+      "size": 2034657,
+      "ext": ".png"
+    },
+    {
+      "path": "public/avatars/artemis.png",
+      "size": 2118261,
+      "ext": ".png"
+    },
+    {
+      "path": "public/avatars/hermes.png",
+      "size": 1641092,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/MANIFEST.json",
+      "size": 15066,
+      "ext": ".json",
+      "description": "Configuration/Data"
+    },
+    {
+      "path": "public/assets/hermesworld/video/world-demo-poster.jpg",
+      "size": 63007,
+      "ext": ".jpg"
+    },
+    {
+      "path": "public/assets/hermesworld/video/world-demo-720p.mp4",
+      "size": 10353994,
+      "ext": ".mp4"
+    },
+    {
+      "path": "public/assets/hermesworld/video/hero-720p.mp4",
+      "size": 644082,
+      "ext": ".mp4"
+    },
+    {
+      "path": "public/assets/hermesworld/video/hero-poster.jpg",
+      "size": 64556,
+      "ext": ".jpg"
+    },
+    {
+      "path": "public/assets/hermesworld/zones/zone-6.jpg",
+      "size": 59446,
+      "ext": ".jpg"
+    },
+    {
+      "path": "public/assets/hermesworld/zones/zone-4.jpg",
+      "size": 48371,
+      "ext": ".jpg"
+    },
+    {
+      "path": "public/assets/hermesworld/zones/zone-5.jpg",
+      "size": 40418,
+      "ext": ".jpg"
+    },
+    {
+      "path": "public/assets/hermesworld/zones/zone-1.jpg",
+      "size": 28167,
+      "ext": ".jpg"
+    },
+    {
+      "path": "public/assets/hermesworld/zones/hero.jpg",
+      "size": 119035,
+      "ext": ".jpg"
+    },
+    {
+      "path": "public/assets/hermesworld/zones/zone-2.jpg",
+      "size": 41268,
+      "ext": ".jpg"
+    },
+    {
+      "path": "public/assets/hermesworld/zones/zone-3.jpg",
+      "size": 48092,
+      "ext": ".jpg"
+    },
+    {
+      "path": "public/assets/hermesworld/zones/cityscape.jpg",
+      "size": 63712,
+      "ext": ".jpg"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-logo-caduceus-favicon.png",
+      "size": 15211,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-app-icon.svg",
+      "size": 259,
+      "ext": ".svg"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-logo-stacked@3x.png",
+      "size": 640821,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-logo-stacked@2x.png",
+      "size": 335190,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-logo-caduceus-badge.png",
+      "size": 162956,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-app-icon.png",
+      "size": 1257,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-app-icon@3x.png",
+      "size": 52299,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-sigil.svg",
+      "size": 253,
+      "ext": ".svg"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-logo-stacked.png",
+      "size": 99870,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-app-icon@2x.png",
+      "size": 26594,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-logo-horizontal.svg",
+      "size": 273,
+      "ext": ".svg"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-logo-horizontal.png",
+      "size": 37128,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-logo-h.png",
+      "size": 15211,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-sigil@2x.png",
+      "size": 51261,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-logo-horizontal@3x.png",
+      "size": 258461,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-logo-caduceus.png",
+      "size": 124317,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-logo-horizontal@2x.png",
+      "size": 137541,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/social-preview-hero.jpg",
+      "size": 82326,
+      "ext": ".jpg"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-logo-stacked.svg",
+      "size": 267,
+      "ext": ".svg"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-sigil@3x.png",
+      "size": 96409,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/art/hermesworld-sigil.png",
+      "size": 15211,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/v2/IMAGEGEN-STATUS.md",
+      "size": 796,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "public/assets/hermesworld/v2/MANIFEST.md",
+      "size": 358,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "public/assets/hermesworld/characters/README.md",
+      "size": 684,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "public/assets/hermesworld/v2/wave-a-source/A03-A08-rerolls.png",
+      "size": 1605926,
+      "ext": ".png"
+    },
+    {
+      "path": "public/assets/hermesworld/v2/wave-a-source/all-images-contact-sheet.png",
+      "size": 2131604,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/light/nous.png",
+      "size": 17597,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/light/kimi.png",
+      "size": 3513,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/light/openai.png",
+      "size": 11297,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/light/zhipu.png",
+      "size": 7967,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/light/atomic-chat.png",
+      "size": 203342,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/light/ollama.png",
+      "size": 8746,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/light/openrouter.png",
+      "size": 3833,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/light/anthropic.png",
+      "size": 3580,
+      "ext": ".png"
+    },
+    {
+      "path": "public/providers/light/minimax.png",
+      "size": 5478,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/gallery/mobile-agent-hub.png",
+      "size": 431229,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/gallery/mobile-configure.png",
+      "size": 477669,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/gallery/mission-wizard.png",
+      "size": 326873,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/gallery/cron-manager.png",
+      "size": 633672,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/gallery/tasks-board.png",
+      "size": 229374,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/gallery/agents-config.png",
+      "size": 594983,
+      "ext": ".png"
+    },
+    {
+      "path": "public/screenshots/gallery/skills-browser.png",
+      "size": 824716,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/design/dirsize-tool.md",
+      "size": 3487,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/swarm/ARCHITECTURE.md",
+      "size": 9747,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/swarm/QUICKSTART.md",
+      "size": 6130,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/swarm/README.md",
+      "size": 5460,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/swarm/ROLES.md",
+      "size": 8365,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/swarm/SKILLS.md",
+      "size": 6953,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/swarm/AUTORESEARCH.md",
+      "size": 8176,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/screenshots/asset-generation-v2-blocked-grid.png",
+      "size": 82475,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/dashboard.png",
+      "size": 605741,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/brand-pack-playground-splash.png",
+      "size": 624011,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/settings.png",
+      "size": 276951,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/playground-speech-bubbles-toasts-desktop.png",
+      "size": 82351,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/terminal.png",
+      "size": 214938,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/files.png",
+      "size": 329556,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/playground-speech-bubbles-toasts-mobile.png",
+      "size": 116343,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/tasks.png",
+      "size": 179343,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/splash.png",
+      "size": 56865,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/conductor.png",
+      "size": 443793,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/brand-pack-static-landing.png",
+      "size": 698329,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/jobs.png",
+      "size": 365043,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/memory.png",
+      "size": 624723,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/skills.png",
+      "size": 809898,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/screenshots/chat.png",
+      "size": 358762,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/playground/README.md",
+      "size": 9026,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/images/star-history.png",
+      "size": 512089,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/requirements/dirsize-tool.md",
+      "size": 1986,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/VISION-BEST-AI-MMO.md",
+      "size": 4518,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/ART-BIBLE-REALISM-LOOP.md",
+      "size": 4939,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/CHATGPT-PROMPT-BATCH-001.md",
+      "size": 27446,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/visual-upgrade-spec.md",
+      "size": 10636,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/AGORA-INSO-IMPLEMENTATION.md",
+      "size": 3388,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/GUILDS-AGENTS-COMPANION-ECONOMY.md",
+      "size": 3402,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/PROMPT-LIBRARY.md",
+      "size": 8467,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/master-roadmap.md",
+      "size": 7228,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/ASSET-GENERATION-V2-STATUS.md",
+      "size": 1110,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/GUILD-EVENT-CONTRACTS.md",
+      "size": 24195,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/graphics-usability-plan.md",
+      "size": 7536,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/FAQ.md",
+      "size": 3326,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/GAMEPLAY-SYSTEMS-BOUNDARIES.md",
+      "size": 7060,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/game-audit-roadmap-2026-05-05.md",
+      "size": 7658,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/README.md",
+      "size": 2703,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/PUBLIC-ROADMAP.md",
+      "size": 5253,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/INGAME-TARGET-SPEC.md",
+      "size": 5353,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/name-reservations.sql",
+      "size": 764,
+      "ext": ".sql"
+    },
+    {
+      "path": "docs/hermesworld/SWARM-GAME-ARCHITECTURE.md",
+      "size": 3294,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/STYLE-LOCK.md",
+      "size": 2511,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/AGORA-INSO-ASSET-PROMPTS.md",
+      "size": 20924,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/agora-believable-checklist.md",
+      "size": 1930,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/MASTER-PLAN.md",
+      "size": 6862,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/AGENTIC-WOW-ROHAN-SYSTEMS.md",
+      "size": 5414,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/lore/WORLD-LORE.md",
+      "size": 3152,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/lore/FACTIONS-LORE.md",
+      "size": 2676,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/lore/TIMELINE.md",
+      "size": 2798,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/lore/SIGILS-LORE.md",
+      "size": 2666,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/lore/ZONES-LORE.md",
+      "size": 4527,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/lore/CLASSES-LORE.md",
+      "size": 3576,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/screenshots-2026-05-06/agora-hud-live.png",
+      "size": 10992,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/hermesworld/screenshots-2026-05-06/agora-hud-side-by-side.png",
+      "size": 1726189,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/hermesworld/guides/GETTING-STARTED.md",
+      "size": 3773,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/guides/SOCIAL.md",
+      "size": 2166,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/guides/CONTROLS.md",
+      "size": 3211,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/guides/FOUNDERS.md",
+      "size": 1944,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/guides/INVENTORY-CRAFTING.md",
+      "size": 2571,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/guides/AGENT-COMPANIONS.md",
+      "size": 2653,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/guides/QUESTS.md",
+      "size": 3059,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/reference-images/roadmap-1-graphic.png",
+      "size": 1189407,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/hermesworld/reference-images/MASTER-PRODUCT-GRAPHIC.png",
+      "size": 2545855,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/hermesworld/reference-images/agora-center-inso-reference.jpeg",
+      "size": 247259,
+      "ext": ".jpeg"
+    },
+    {
+      "path": "docs/hermesworld/reference-images/roadmap-2-graphic.png",
+      "size": 2545855,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/hermesworld/reference-images/INGAME-TARGET-AGORA.png",
+      "size": 2394117,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/hermesworld/walkthroughs/QUEST-002-FIRST-COMPANION.md",
+      "size": 1905,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/walkthroughs/WORLD-EVENTS.md",
+      "size": 2115,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/walkthroughs/QUEST-001-ATHENAS-INTRO.md",
+      "size": 2148,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/hermesworld/walkthroughs/QUEST-003-FORGE-FIRST-CRAFT.md",
+      "size": 1731,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "docs/pr-screenshots/wave-chat-panels/desktop.png",
+      "size": 697811,
+      "ext": ".png"
+    },
+    {
+      "path": "docs/pr-screenshots/wave-chat-panels/mobile.png",
+      "size": 33303,
+      "ext": ".png"
+    },
+    {
+      "path": "agents/strategist/README.md",
+      "size": 362,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "agents/reviewer/README.md",
+      "size": 403,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "agents/inbox-triage/README.md",
+      "size": 385,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "agents/maintainer/README.md",
+      "size": 430,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "agents/qa/README.md",
+      "size": 333,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "agents/km-agent/README.md",
+      "size": 399,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "agents/builder/README.md",
+      "size": 430,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "agents/researcher/README.md",
+      "size": 923,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "agents/ops-watch/README.md",
+      "size": 368,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "agents/orchestrator/README.md",
+      "size": 489,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "dist/server/assets/pty-helper.py",
+      "size": 3550,
+      "ext": ".py",
+      "description": "Python script"
+    },
+    {
+      "path": "memory/goals/2026-05-05-hermesworld-viral-sprint/handoff.md",
+      "size": 9455,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "memory/goals/2026-05-03-playground-training-grounds/SHIP-READY-CHECKLIST.md",
+      "size": 6115,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "memory/goals/2026-05-03-playground-training-grounds/HERMESWORLD-FINAL-DEMO-SCRIPT.md",
+      "size": 7591,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "memory/goals/2026-05-03-playground-training-grounds/iterations/001.md",
+      "size": 2574,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "memory/goals/2026-05-03-playground-training-grounds/iterations/005.md",
+      "size": 1612,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "memory/goals/2026-05-03-playground-training-grounds/iterations/004.md",
+      "size": 3143,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "memory/goals/2026-05-03-playground-training-grounds/iterations/007-handoff.md",
+      "size": 4964,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "memory/goals/2026-05-03-playground-training-grounds/iterations/009-3002-root-cause-found.md",
+      "size": 3400,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "memory/goals/2026-05-03-playground-training-grounds/iterations/006-showcase.md",
+      "size": 7174,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "memory/goals/2026-05-03-playground-training-grounds/iterations/008-3002-loading-loop-handoff.md",
+      "size": 7545,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "memory/goals/2026-05-03-playground-training-grounds/iterations/003.md",
+      "size": 2460,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "memory/goals/2026-05-03-playground-training-grounds/iterations/002.md",
+      "size": 2450,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "memory/swarm/missions/2026-05-05-pr-triage.md",
+      "size": 1764,
+      "ext": ".md",
+      "description": "Documentation"
+    },
+    {
+      "path": "playground-ws-worker/src/worker.ts",
+      "size": 25168,
+      "ext": ".ts",
+      "description": "TypeScript source file"
+    }
+  ],
+  "structure": {},
+  "version": "2.3.0",
+  "dependencies": {
+    "@base-ui/react": "^1.1.0",
+    "@hugeicons/core-free-icons": "^3.1.1",
+    "@hugeicons/react": "^1.1.4",
+    "@lobehub/icons": "^5.0.1",
+    "@lobehub/icons-static-png": "^1.83.0",
+    "@monaco-editor/react": "^4.7.0",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@react-three/postprocessing": "^3.0.4",
+    "@react-three/rapier": "^2.2.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "@tanstack/react-query": "5.90.21",
+    "@tanstack/react-router": "1.166.7",
+    "@tanstack/react-router-devtools": "1.166.7",
+    "@tanstack/react-router-ssr-query": "1.166.7",
+    "@tanstack/react-start": "1.166.8",
+    "@tanstack/router-plugin": "1.166.7",
+    "@types/react-grid-layout": "^1.3.6",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "ecctrl": "^1.0.97",
+    "electron-updater": "^6.6.2",
+    "framer-motion": "^12.36.0",
+    "marked": "^17.0.1",
+    "motion": "^12.29.2",
+    "motion-dom": "^12.36.0",
+    "motion-utils": "^12.36.0",
+    "playwright": "^1.58.2",
+    "playwright-extra": "^4.3.6",
+    "postprocessing": "^6.39.1",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-joyride": "^2.9.3",
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.7.0",
+    "remark-breaks": "^4.0.0",
+    "remark-gfm": "^4.0.1",
+    "shiki": "^3.21.0",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss": "^4.1.18",
+    "three": "^0.184.0",
+    "vite-tsconfig-paths": "^6.0.2",
+    "ws": "^8.19.0",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.8.0",
+    "xterm-addon-search": "^0.13.0",
+    "xterm-addon-web-links": "^0.9.0",
+    "yaml": "^2.8.2",
+    "zod": "^3.25.76",
+    "zustand": "^5.0.11"
+  }
+}
