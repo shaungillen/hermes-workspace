@@ -1,19 +1,18 @@
-import { useState, useEffect, type CSSProperties } from 'react'
+import { useEffect, useState } from 'react'
 import { HugeiconsIcon } from '@hugeicons/react'
 import {
-  CheckmarkCircle01Icon,
-  CancelCircleIcon,
-  TimeHalfPassIcon,
   AlertCircleIcon,
-  ArrowRight01Icon,
-  EyeIcon,
+  CancelCircleIcon,
+  CheckListIcon,
+  CheckmarkCircle01Icon,
+  ComputerTerminal01Icon,
   File01Icon,
   Shield01Icon,
-  UserMultipleIcon,
   SlidersVerticalIcon,
-  ComputerTerminal01Icon,
-  CheckListIcon,
+  TimeHalfPassIcon,
+  UserMultipleIcon,
 } from '@hugeicons/core-free-icons'
+import type { CSSProperties, ComponentProps } from 'react'
 import { cn } from '@/lib/utils'
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -51,7 +50,7 @@ interface GateItem {
   verdict: string
 }
 
-const GATE_ITEMS: GateItem[] = [
+const GATE_ITEMS: Array<GateItem> = [
   {
     id: 'gate-1',
     phase: 1,
@@ -118,7 +117,7 @@ interface AgentRosterItem {
   isActivated: boolean
 }
 
-const AGENT_ROSTER: AgentRosterItem[] = [
+const AGENT_ROSTER: Array<AgentRosterItem> = [
   {
     id: 'production-lead',
     name: 'FieldWorks Production Lead',
@@ -167,7 +166,7 @@ function StatusBadge({ status }: { status: GateStatus | AgentStatus }) {
     ACTIVE: { label: 'ACTIVE', color: '#16a34a', bg: 'rgba(22,163,74,0.12)', icon: CheckmarkCircle01Icon },
     IDLE: { label: 'IDLE', color: 'var(--color-primary-500)', bg: 'var(--color-primary-100)', icon: TimeHalfPassIcon },
     STAGED: { label: 'STAGED', color: '#7c3aed', bg: 'rgba(124,58,237,0.12)', icon: AlertCircleIcon },
-  }[status] ?? { label: status, color: 'var(--color-primary-500)', bg: 'var(--color-primary-100)', icon: TimeHalfPassIcon }
+  }[status]
 
   return (
     <span
@@ -180,7 +179,9 @@ function StatusBadge({ status }: { status: GateStatus | AgentStatus }) {
   )
 }
 
-function SectionHeader({ icon, label }: { icon: typeof EyeIcon; label: string }) {
+type HugeIconDefinition = ComponentProps<typeof HugeiconsIcon>['icon']
+
+function SectionHeader({ icon, label }: { icon: HugeIconDefinition; label: string }) {
   return (
     <div className="flex items-center gap-2 mb-3">
       <HugeiconsIcon icon={icon} size={15} style={{ color: 'var(--theme-accent)' }} />
@@ -597,7 +598,7 @@ export function FieldWorksReviewConsole() {
             <button
               key={ev.path}
               onClick={() => {
-                void navigator.clipboard?.writeText(ev.path).catch(() => undefined)
+                void navigator.clipboard.writeText(ev.path).catch(() => undefined)
                 setCopiedPath(ev.path)
                 setTimeout(() => setCopiedPath(null), 2000)
               }}
