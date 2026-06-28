@@ -597,9 +597,9 @@ export function FieldWorksReviewConsole() {
             <button
               key={ev.path}
               onClick={() => {
-                void navigator.clipboard?.writeText(ev.path).catch(() => undefined);
-                setCopiedPath(ev.path);
-                setTimeout(() => setCopiedPath(null), 2000);
+                void navigator.clipboard?.writeText(ev.path).catch(() => undefined)
+                setCopiedPath(ev.path)
+                setTimeout(() => setCopiedPath(null), 2000)
               }}
               className="px-2 py-0.5 rounded font-mono text-[10px] cursor-pointer transition-colors border hover:bg-[var(--theme-card2)] active:scale-[0.98]"
               style={{
