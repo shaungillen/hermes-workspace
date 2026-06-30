@@ -25,6 +25,7 @@ This workspace uses semantic Hermes swarm workers, not numbered-only lanes. The 
 - Do not enable optional Hermes plugins globally unless the task explicitly needs them; record plugin/toolset alignment in `swarm.yaml` first.
 - For local Workspace pairing/debugging, treat **one gateway + one dashboard** as canonical: `hermes gateway run` on `:8642` and `hermes dashboard` on `:9119`. Before starting another gateway, verify `curl http://127.0.0.1:3000/api/sessions` (or the active workspace port) first. If Sessions already returns data, refresh/reprobe the UI instead of spawning a duplicate gateway.
 - If the default model is `gpt-5.4` / `openai-codex`, remember that chat depends on a live local Codex CLI login (`codex login`).
+- When multiple agents work in parallel on the same repository, always check for divergent branches (`git status`) first. Commit and push local changes immediately upon verification, and pull/rebase before starting new work to prevent divergent branch states.
 
 ## Windows-specific notes (2026-06-01)
 
