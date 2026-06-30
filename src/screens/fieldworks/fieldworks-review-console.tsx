@@ -37,6 +37,10 @@ const THEME: CSSProperties = {
 // ─────────────────────────────────────────────────────────────────────────────
 
 type GateStatus = 'PASS' | 'FAIL' | 'PENDING_OPERATOR' | 'HOLD' | 'NOT_STARTED'
+type LocalExecutionStatus = 'idle' | 'running' | 'succeeded' | 'failed'
+type LocalExecutionActionId =
+  | 'local_execution_smoke_test'
+  | 'local_report_folder_inventory'
 
 interface GateItem {
   id: string
@@ -48,6 +52,16 @@ interface GateItem {
   reportPath: string
   rawOutputPath: string
   verdict: string
+}
+
+interface LocalExecutionRun {
+  status: LocalExecutionStatus
+  message: string
+  actionId?: LocalExecutionActionId
+  exitCode?: number | null
+  receiptPath?: string
+  stdout?: string
+  stderr?: string
 }
 
 const GATE_ITEMS: Array<GateItem> = [
@@ -264,11 +278,73 @@ function PipelineStepper({ activePhase }: { activePhase: number }) {
 function DetailPanel({ item }: { item: GateItem }) {
   const [tab, setTab] = useState<'summary' | 'raw'>('summary')
   const [simulatedAction, setSimulatedAction] = useState<'approved' | 'rejected' | null>(null)
+  const [localExecutionRun, setLocalExecutionRun] = useState<LocalExecutionRun>({
+    status: 'idle',
+    message: 'Ready. Only allowlisted local jobs can run from this console.',
+  })
 
   // Reset simulated state when selected gate item changes
   useEffect(() => {
     setSimulatedAction(null)
   }, [item.id])
+
+  async function runApprovedLocalAction(actionId: LocalExecutionActionId) {
+    const runningLabel =
+      actionId === 'local_report_folder_inventory'
+        ? 'local_report_folder_inventory'
+        : 'local_execution_smoke_test'
+    setLocalExecutionRun({
+      status: 'running',
+      message: `Running allowlisted ${runningLabel}...`,
+      actionId,
+    })
+
+    try {
+      const response = await fetch('/api/local-execution', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ actionId }),
+      })
+      const payload = await response.json().catch(() => ({}))
+      if (!response.ok || payload?.ok !== true) {
+        setLocalExecutionRun({
+          status: 'failed',
+          message: String(payload?.error || 'Local execution request failed'),
+          actionId,
+        })
+        return
+      }
+
+      const completedMessage =
+        actionId === 'local_report_folder_inventory'
+          ? 'Report folder inventory completed. Receipt written.'
+          : 'Smoke job completed. Receipt written.'
+      setLocalExecutionRun({
+        status: payload.exitCode === 0 ? 'succeeded' : 'failed',
+        message:
+          payload.exitCode === 0
+            ? completedMessage
+            : 'Local action finished with a non-zero exit code.',
+        actionId:
+          payload.actionId === 'local_report_folder_inventory'
+            ? 'local_report_folder_inventory'
+            : 'local_execution_smoke_test',
+        exitCode:
+          typeof payload.exitCode === 'number' || payload.exitCode === null
+            ? payload.exitCode
+            : null,
+        receiptPath: typeof payload.receiptPath === 'string' ? payload.receiptPath : '',
+        stdout: typeof payload.stdout === 'string' ? payload.stdout : '',
+        stderr: typeof payload.stderr === 'string' ? payload.stderr : '',
+      })
+    } catch (error) {
+      setLocalExecutionRun({
+        status: 'failed',
+        message: error instanceof Error ? error.message : 'Local execution request failed',
+        actionId,
+      })
+    }
+  }
 
   return (
     <div className="flex flex-col h-full">
@@ -398,6 +474,84 @@ function DetailPanel({ item }: { item: GateItem }) {
             )}
           </div>
         )}
+
+        <div className="mt-4 pt-4 border-t border-[var(--theme-border)] space-y-3">
+          <div className="flex items-center justify-between gap-2">
+            <div>
+              <div className="text-[10px] font-bold opacity-40 uppercase tracking-wider">Approved Local Actions</div>
+              <div className="text-xs font-semibold mt-0.5">
+                {localExecutionRun.actionId || 'smoke + report inventory'}
+              </div>
+            </div>
+            <span
+              className={cn(
+                'px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wide',
+                localExecutionRun.status === 'succeeded' && 'bg-green-500/10 text-green-600',
+                localExecutionRun.status === 'failed' && 'bg-red-500/10 text-red-500',
+                localExecutionRun.status === 'running' && 'bg-amber-500/10 text-amber-600',
+                localExecutionRun.status === 'idle' && 'bg-[var(--theme-card2)] text-[var(--theme-muted)]',
+              )}
+            >
+              {localExecutionRun.status}
+            </span>
+          </div>
+
+          <div className="text-[10px] leading-relaxed opacity-60 rounded-lg border border-[var(--theme-border)] bg-[var(--theme-card2)] p-2">
+            Local execution is allowlist-only. The browser sends an action ID; the backend owns the fixed command and fixed report folder. No arbitrary command, path, args, deploy, or production mutation is accepted.
+          </div>
+
+          <div className="grid gap-2 sm:grid-cols-2">
+            <button
+              onClick={() => void runApprovedLocalAction('local_execution_smoke_test')}
+              disabled={localExecutionRun.status === 'running'}
+              className="py-2 rounded-lg text-xs font-bold transition-all cursor-pointer text-center bg-amber-500/10 text-amber-700 border border-amber-500/30 hover:bg-amber-500/20 active:scale-[0.98] disabled:cursor-wait disabled:opacity-60"
+            >
+              {localExecutionRun.status === 'running' &&
+              localExecutionRun.actionId === 'local_execution_smoke_test'
+                ? 'Running Smoke Test...'
+                : 'Run Smoke Test'}
+            </button>
+            <button
+              onClick={() => void runApprovedLocalAction('local_report_folder_inventory')}
+              disabled={localExecutionRun.status === 'running'}
+              className="py-2 rounded-lg text-xs font-bold transition-all cursor-pointer text-center bg-blue-500/10 text-blue-500 border border-blue-500/30 hover:bg-blue-500/20 active:scale-[0.98] disabled:cursor-wait disabled:opacity-60"
+            >
+              {localExecutionRun.status === 'running' &&
+              localExecutionRun.actionId === 'local_report_folder_inventory'
+                ? 'Running Inventory...'
+                : 'Run Report Inventory'}
+            </button>
+          </div>
+
+          <div className="rounded-lg border border-[var(--theme-border)] bg-[var(--theme-card2)] p-3 text-[10px] space-y-2">
+            <div className="flex items-center justify-between gap-2">
+              <span className="font-bold uppercase tracking-wider opacity-40">Job Status</span>
+              <span className="font-mono opacity-70">{localExecutionRun.exitCode === undefined ? 'exit: —' : `exit: ${localExecutionRun.exitCode}`}</span>
+            </div>
+            <div className="opacity-70">{localExecutionRun.message}</div>
+            {localExecutionRun.receiptPath && (
+              <code className="block break-all rounded border border-[var(--theme-border)] bg-[var(--theme-card)] p-2 font-mono text-[10px] text-green-600">
+                {localExecutionRun.receiptPath}
+              </code>
+            )}
+            {(localExecutionRun.stdout || localExecutionRun.stderr) && (
+              <div className="grid gap-2 sm:grid-cols-2">
+                <div>
+                  <div className="mb-1 font-bold uppercase tracking-wider opacity-40">Stdout</div>
+                  <pre className="max-h-20 overflow-auto rounded border border-[var(--theme-border)] bg-[var(--theme-card)] p-2 font-mono text-[10px] opacity-70">
+                    {localExecutionRun.stdout || '(empty)'}
+                  </pre>
+                </div>
+                <div>
+                  <div className="mb-1 font-bold uppercase tracking-wider opacity-40">Stderr</div>
+                  <pre className="max-h-20 overflow-auto rounded border border-[var(--theme-border)] bg-[var(--theme-card)] p-2 font-mono text-[10px] opacity-70">
+                    {localExecutionRun.stderr || '(empty)'}
+                  </pre>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   )
@@ -442,6 +596,7 @@ function GovernancePanel() {
     { ok: true, text: 'No swarm.yaml edited during MVP build.' },
     { ok: true, text: 'No Drew/Luna worker delegation performed.' },
     { ok: true, text: 'No deployment or publish performed.' },
+    { ok: true, text: 'Local execution lane is allowlist-only and smoke-test limited.' },
     { ok: true, text: 'Raw output preserved alongside all summary reports.' },
     { ok: false, text: 'Build Gate (Phase 7) awaiting operator approval — no implementation beyond MVP screen.' },
     { ok: null, text: 'Phases 2–4 and 6–11 are not started. Require sequential gate approvals.' },
@@ -617,7 +772,7 @@ export function FieldWorksReviewConsole() {
         
         <div className="ml-auto flex items-center gap-1 opacity-45 text-[10px]">
           <HugeiconsIcon icon={SlidersVerticalIcon} size={11} />
-          <span>MVP — Static preview. Triggers are simulated.</span>
+          <span>MVP — Gate actions simulated; local smoke job allowlisted.</span>
         </div>
       </div>
     </div>
