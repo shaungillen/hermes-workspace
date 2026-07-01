@@ -157,6 +157,8 @@ import { Route as ApiKnowledgeGraphRouteImport } from './routes/api/knowledge/gr
 import { Route as ApiKnowledgeConfigRouteImport } from './routes/api/knowledge/config'
 import { Route as ApiHermesworldReservationsRouteImport } from './routes/api/hermesworld/reservations'
 import { Route as ApiHermesTasksTaskIdRouteImport } from './routes/api/hermes-tasks.$taskId'
+import { Route as ApiFieldworksDecisionRouteImport } from './routes/api/fieldworks/decision'
+import { Route as ApiFieldworksDataRouteImport } from './routes/api/fieldworks/data'
 import { Route as ApiExternalMemorySearchRouteImport } from './routes/api/external-memory/search'
 import { Route as ApiExternalMemoryProvidersRouteImport } from './routes/api/external-memory/providers'
 import { Route as ApiExternalMemoryCandidatesRouteImport } from './routes/api/external-memory/candidates'
@@ -914,6 +916,16 @@ const ApiHermesTasksTaskIdRoute = ApiHermesTasksTaskIdRouteImport.update({
   path: '/$taskId',
   getParentRoute: () => ApiHermesTasksRoute,
 } as any)
+const ApiFieldworksDecisionRoute = ApiFieldworksDecisionRouteImport.update({
+  id: '/api/fieldworks/decision',
+  path: '/api/fieldworks/decision',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiFieldworksDataRoute = ApiFieldworksDataRouteImport.update({
+  id: '/api/fieldworks/data',
+  path: '/api/fieldworks/data',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiExternalMemorySearchRoute = ApiExternalMemorySearchRouteImport.update({
   id: '/api/external-memory/search',
   path: '/api/external-memory/search',
@@ -1105,6 +1117,8 @@ export interface FileRoutesByFullPath {
   '/api/external-memory/candidates': typeof ApiExternalMemoryCandidatesRoute
   '/api/external-memory/providers': typeof ApiExternalMemoryProvidersRoute
   '/api/external-memory/search': typeof ApiExternalMemorySearchRoute
+  '/api/fieldworks/data': typeof ApiFieldworksDataRoute
+  '/api/fieldworks/decision': typeof ApiFieldworksDecisionRoute
   '/api/hermes-tasks/$taskId': typeof ApiHermesTasksTaskIdRoute
   '/api/hermesworld/reservations': typeof ApiHermesworldReservationsRouteWithChildren
   '/api/knowledge/config': typeof ApiKnowledgeConfigRoute
@@ -1268,6 +1282,8 @@ export interface FileRoutesByTo {
   '/api/external-memory/candidates': typeof ApiExternalMemoryCandidatesRoute
   '/api/external-memory/providers': typeof ApiExternalMemoryProvidersRoute
   '/api/external-memory/search': typeof ApiExternalMemorySearchRoute
+  '/api/fieldworks/data': typeof ApiFieldworksDataRoute
+  '/api/fieldworks/decision': typeof ApiFieldworksDecisionRoute
   '/api/hermes-tasks/$taskId': typeof ApiHermesTasksTaskIdRoute
   '/api/hermesworld/reservations': typeof ApiHermesworldReservationsRouteWithChildren
   '/api/knowledge/config': typeof ApiKnowledgeConfigRoute
@@ -1433,6 +1449,8 @@ export interface FileRoutesById {
   '/api/external-memory/candidates': typeof ApiExternalMemoryCandidatesRoute
   '/api/external-memory/providers': typeof ApiExternalMemoryProvidersRoute
   '/api/external-memory/search': typeof ApiExternalMemorySearchRoute
+  '/api/fieldworks/data': typeof ApiFieldworksDataRoute
+  '/api/fieldworks/decision': typeof ApiFieldworksDecisionRoute
   '/api/hermes-tasks/$taskId': typeof ApiHermesTasksTaskIdRoute
   '/api/hermesworld/reservations': typeof ApiHermesworldReservationsRouteWithChildren
   '/api/knowledge/config': typeof ApiKnowledgeConfigRoute
@@ -1599,6 +1617,8 @@ export interface FileRouteTypes {
     | '/api/external-memory/candidates'
     | '/api/external-memory/providers'
     | '/api/external-memory/search'
+    | '/api/fieldworks/data'
+    | '/api/fieldworks/decision'
     | '/api/hermes-tasks/$taskId'
     | '/api/hermesworld/reservations'
     | '/api/knowledge/config'
@@ -1762,6 +1782,8 @@ export interface FileRouteTypes {
     | '/api/external-memory/candidates'
     | '/api/external-memory/providers'
     | '/api/external-memory/search'
+    | '/api/fieldworks/data'
+    | '/api/fieldworks/decision'
     | '/api/hermes-tasks/$taskId'
     | '/api/hermesworld/reservations'
     | '/api/knowledge/config'
@@ -1926,6 +1948,8 @@ export interface FileRouteTypes {
     | '/api/external-memory/candidates'
     | '/api/external-memory/providers'
     | '/api/external-memory/search'
+    | '/api/fieldworks/data'
+    | '/api/fieldworks/decision'
     | '/api/hermes-tasks/$taskId'
     | '/api/hermesworld/reservations'
     | '/api/knowledge/config'
@@ -2085,6 +2109,8 @@ export interface RootRouteChildren {
   ApiExternalMemoryCandidatesRoute: typeof ApiExternalMemoryCandidatesRoute
   ApiExternalMemoryProvidersRoute: typeof ApiExternalMemoryProvidersRoute
   ApiExternalMemorySearchRoute: typeof ApiExternalMemorySearchRoute
+  ApiFieldworksDataRoute: typeof ApiFieldworksDataRoute
+  ApiFieldworksDecisionRoute: typeof ApiFieldworksDecisionRoute
   ApiHermesworldReservationsRoute: typeof ApiHermesworldReservationsRouteWithChildren
   ApiKnowledgeConfigRoute: typeof ApiKnowledgeConfigRoute
   ApiKnowledgeGraphRoute: typeof ApiKnowledgeGraphRoute
@@ -3149,6 +3175,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiHermesTasksTaskIdRouteImport
       parentRoute: typeof ApiHermesTasksRoute
     }
+    '/api/fieldworks/decision': {
+      id: '/api/fieldworks/decision'
+      path: '/api/fieldworks/decision'
+      fullPath: '/api/fieldworks/decision'
+      preLoaderRoute: typeof ApiFieldworksDecisionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/fieldworks/data': {
+      id: '/api/fieldworks/data'
+      path: '/api/fieldworks/data'
+      fullPath: '/api/fieldworks/data'
+      preLoaderRoute: typeof ApiFieldworksDataRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/external-memory/search': {
       id: '/api/external-memory/search'
       path: '/api/external-memory/search'
@@ -3570,6 +3610,8 @@ const rootRouteChildren: RootRouteChildren = {
   ApiExternalMemoryCandidatesRoute: ApiExternalMemoryCandidatesRoute,
   ApiExternalMemoryProvidersRoute: ApiExternalMemoryProvidersRoute,
   ApiExternalMemorySearchRoute: ApiExternalMemorySearchRoute,
+  ApiFieldworksDataRoute: ApiFieldworksDataRoute,
+  ApiFieldworksDecisionRoute: ApiFieldworksDecisionRoute,
   ApiHermesworldReservationsRoute: ApiHermesworldReservationsRouteWithChildren,
   ApiKnowledgeConfigRoute: ApiKnowledgeConfigRoute,
   ApiKnowledgeGraphRoute: ApiKnowledgeGraphRoute,

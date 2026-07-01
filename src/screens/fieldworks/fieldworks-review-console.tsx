@@ -902,7 +902,7 @@ export function FieldWorksReviewConsole() {
             <SectionHeader icon={File01Icon} label="Work Queue" />
           </div>
           <div className="flex-1 overflow-y-auto p-3 space-y-2">
-            {GATE_ITEMS.map((item) => (
+            {GATE_ITEMS_FALLBACK.map((item) => (
               <GateCard
                 key={item.id}
                 item={item}
@@ -923,7 +923,7 @@ export function FieldWorksReviewConsole() {
               onChange={(e) => setSelectedGateId(e.target.value)}
               className="w-full p-2 rounded-lg border border-[var(--theme-border)] bg-[var(--theme-card2)] text-xs font-semibold"
             >
-              {GATE_ITEMS.map((g) => (
+              {GATE_ITEMS_FALLBACK.map((g) => (
                 <option key={g.id} value={g.id}>
                   Phase {g.phase}: {g.name}
                 </option>
