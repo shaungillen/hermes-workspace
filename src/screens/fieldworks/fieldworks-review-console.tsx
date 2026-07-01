@@ -69,13 +69,21 @@ interface LiveRun {
 
 interface LiveDecision {
   id: string
-  run_id: string | null
-  gate_id: string | null
-  status: string | null
-  operator: string | null
-  notes: string | null
+  project_id: string | null
+  thread_id: string | null
+  skill_run_id: string | null
+  title: string | null
+  body: string | null
+  rationale: string | null
+  linked_sources: unknown
+  linked_artifacts: unknown
+  is_approval_gate: boolean
+  gate_name: string | null
+  decided_by: string | null
   decided_at: string | null
   supersedes: string | null
+  created_at: string | null
+  updated_at: string | null
 }
 
 interface LiveOpenLoop {
@@ -586,11 +594,11 @@ function DetailPanel({
           <div className="space-y-2">
             <div className={cn(
               'p-3 rounded-lg border text-xs font-semibold',
-              committedDecision.status === 'APPROVED'
+              committedDecision.title?.startsWith('APPROVED')
                 ? 'border-green-500/30 bg-green-500/10 text-green-600'
                 : 'border-red-500/30 bg-red-500/10 text-red-500',
             )}>
-              {committedDecision.status === 'APPROVED' ? '✓' : '✕'} Gate decision committed to Supabase —{' '}
+              {committedDecision.title?.startsWith('APPROVED') ? '✓' : '✕'} Gate decision committed to Supabase —{' '}
               <span className="font-mono">{committedDecision.id?.slice(0, 8)}…</span>
             </div>
             {okfWarning && (
@@ -834,7 +842,43 @@ export function FieldWorksReviewConsole() {
       .finally(() => setLiveDataLoading(false))
   }, [])
 
-  const selectedGate = GATE_ITEMS_FALLBACK.find((g) => g.id === selectedGateId)!
+  // Dynamically compute gate statuses based on live decisions
+  const getGateStatus = (gateId: string, fallbackStatus: GateStatus): GateStatus => {
+    if (!liveData || !liveData.decisions || !('rows' in liveData.decisions)) {
+      return fallbackStatus
+    }
+    const decisions = liveData.decisions.rows as LiveDecision[]
+    // Find the latest decision for this gate
+    const gateDecisions = decisions
+      .filter((d) => d.gate_name === gateId)
+      .sort((a, b) => new Date(b.decided_at || 0).getTime() - new Date(a.decided_at || 0).getTime())
+    
+    if (gateDecisions.length > 0) {
+      const latest = gateDecisions[0]
+      if (latest.title?.startsWith('APPROVED')) return 'PASS'
+      if (latest.title?.startsWith('REJECTED')) return 'FAIL'
+      if (latest.title?.startsWith('HOLD')) return 'HOLD'
+    }
+    
+    // Dependencies sequence logic:
+    // If Build Gate (gate-7) is PASS, then QA Gate (gate-8) should be PENDING_OPERATOR
+    if (gateId === 'gate-8') {
+      const gate7Status = getGateStatus('gate-7', 'PENDING_OPERATOR')
+      if (gate7Status === 'PASS') {
+        return 'PENDING_OPERATOR'
+      }
+      return 'NOT_STARTED'
+    }
+    
+    return fallbackStatus
+  }
+
+  const dynamicGateItems = GATE_ITEMS_FALLBACK.map((g) => ({
+    ...g,
+    status: getGateStatus(g.id, g.status)
+  }))
+
+  const selectedGate = dynamicGateItems.find((g) => g.id === selectedGateId)!
 
   return (
     <div
@@ -902,7 +946,7 @@ export function FieldWorksReviewConsole() {
             <SectionHeader icon={File01Icon} label="Work Queue" />
           </div>
           <div className="flex-1 overflow-y-auto p-3 space-y-2">
-            {GATE_ITEMS_FALLBACK.map((item) => (
+            {dynamicGateItems.map((item) => (
               <GateCard
                 key={item.id}
                 item={item}
@@ -923,7 +967,7 @@ export function FieldWorksReviewConsole() {
               onChange={(e) => setSelectedGateId(e.target.value)}
               className="w-full p-2 rounded-lg border border-[var(--theme-border)] bg-[var(--theme-card2)] text-xs font-semibold"
             >
-              {GATE_ITEMS_FALLBACK.map((g) => (
+              {dynamicGateItems.map((g) => (
                 <option key={g.id} value={g.id}>
                   Phase {g.phase}: {g.name}
                 </option>
