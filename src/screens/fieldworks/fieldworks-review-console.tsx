@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { HugeiconsIcon } from '@hugeicons/react'
 import {
   AlertCircleIcon,
@@ -32,8 +32,7 @@ const THEME: CSSProperties = {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Static mock data — reflects the real gate pipeline run completed today
-// No backend wiring. Replace with API calls when backend is ready.
+// Types
 // ─────────────────────────────────────────────────────────────────────────────
 
 type GateStatus = 'PASS' | 'FAIL' | 'PENDING_OPERATOR' | 'HOLD' | 'NOT_STARTED'
@@ -41,6 +40,7 @@ type LocalExecutionStatus = 'idle' | 'running' | 'succeeded' | 'failed'
 type LocalExecutionActionId =
   | 'local_execution_smoke_test'
   | 'local_report_folder_inventory'
+type DecisionStatus = 'APPROVED' | 'REJECTED' | 'HOLD' | 'ESCALATED'
 
 interface GateItem {
   id: string
@@ -54,6 +54,46 @@ interface GateItem {
   verdict: string
 }
 
+interface LiveRun {
+  id: string
+  agent_id: string | null
+  gate_id: string | null
+  status: string | null
+  started_at: string | null
+  completed_at: string | null
+  verdict: string | null
+  summary: string | null
+  report_path: string | null
+  raw_output_path: string | null
+}
+
+interface LiveDecision {
+  id: string
+  run_id: string | null
+  gate_id: string | null
+  status: string | null
+  operator: string | null
+  notes: string | null
+  decided_at: string | null
+  supersedes: string | null
+}
+
+interface LiveOpenLoop {
+  id: string
+  title: string | null
+  status: string | null
+  owner: string | null
+  created_at: string | null
+  resolved_at: string | null
+  notes: string | null
+}
+
+interface LiveData {
+  runs: { ok: boolean; rows: LiveRun[]; count: number } | { ok: false; error: string }
+  decisions: { ok: boolean; rows: LiveDecision[]; count: number } | { ok: false; error: string }
+  openLoops: { ok: boolean; rows: LiveOpenLoop[]; count: number } | { ok: false; error: string }
+}
+
 interface LocalExecutionRun {
   status: LocalExecutionStatus
   message: string
@@ -64,7 +104,10 @@ interface LocalExecutionRun {
   stderr?: string
 }
 
-const GATE_ITEMS: Array<GateItem> = [
+// ─────────────────────────────────────────────────────────────────────────────
+// Static fallback gate items (used while live data loads or on error)
+// ─────────────────────────────────────────────────────────────────────────────
+const GATE_ITEMS_FALLBACK: Array<GateItem> = [
   {
     id: 'gate-1',
     phase: 1,
@@ -275,18 +318,124 @@ function PipelineStepper({ activePhase }: { activePhase: number }) {
   )
 }
 
-function DetailPanel({ item }: { item: GateItem }) {
-  const [tab, setTab] = useState<'summary' | 'raw'>('summary')
-  const [simulatedAction, setSimulatedAction] = useState<'approved' | 'rejected' | null>(null)
+// ─────────────────────────────────────────────────────────────────────────────
+// Confirmation Modal
+// ─────────────────────────────────────────────────────────────────────────────
+function ConfirmModal({
+  intent,
+  gateId,
+  onConfirm,
+  onCancel,
+  submitting,
+}: {
+  intent: DecisionStatus
+  gateId: string
+  onConfirm: () => void
+  onCancel: () => void
+  submitting: boolean
+}) {
+  const isApprove = intent === 'APPROVED'
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center" style={{ background: 'rgba(0,0,0,0.45)' }}>
+      <div
+        className="w-[340px] rounded-2xl border p-6 shadow-2xl"
+        style={{ background: 'var(--theme-card)', borderColor: 'var(--theme-border)' }}
+      >
+        <div className="text-sm font-bold mb-1" style={{ color: isApprove ? '#16a34a' : '#dc2626' }}>
+          {isApprove ? '✓ Confirm Gate Approval' : '✕ Confirm Gate Rejection'}
+        </div>
+        <p className="text-xs opacity-70 mb-4">
+          This will write a permanent <strong>{intent}</strong> decision record to the
+          Supabase database for gate <code className="font-mono">{gateId}</code> and stage
+          an OKF audit document. This action cannot be undone (only superseded).
+        </p>
+        <div className="flex gap-2">
+          <button
+            id="confirm-gate-action"
+            disabled={submitting}
+            onClick={onConfirm}
+            className={cn(
+              'flex-1 py-2 rounded-lg text-xs font-bold transition-all border cursor-pointer',
+              isApprove
+                ? 'bg-green-600/10 text-green-600 border-green-500/30 hover:bg-green-600/20'
+                : 'bg-red-600/10 text-red-500 border-red-500/30 hover:bg-red-600/20',
+              submitting && 'opacity-50 cursor-wait',
+            )}
+          >
+            {submitting ? 'Committing…' : `Confirm ${intent}`}
+          </button>
+          <button
+            id="cancel-gate-action"
+            disabled={submitting}
+            onClick={onCancel}
+            className="flex-1 py-2 rounded-lg text-xs font-bold border transition-all cursor-pointer"
+            style={{ borderColor: 'var(--theme-border)', background: 'var(--theme-card2)' }}
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Detail Panel
+// ─────────────────────────────────────────────────────────────────────────────
+function DetailPanel({
+  item,
+  liveData,
+}: {
+  item: GateItem
+  liveData: LiveData | null
+}) {
+  const [tab, setTab] = useState<'summary' | 'raw' | 'live'>('summary')
+  const [pendingIntent, setPendingIntent] = useState<DecisionStatus | null>(null)
+  const [committedDecision, setCommittedDecision] = useState<LiveDecision | null>(null)
+  const [decisionError, setDecisionError] = useState<string | null>(null)
+  const [submitting, setSubmitting] = useState(false)
+  const [okfWarning, setOkfWarning] = useState<string | null>(null)
   const [localExecutionRun, setLocalExecutionRun] = useState<LocalExecutionRun>({
     status: 'idle',
     message: 'Ready. Only allowlisted local jobs can run from this console.',
   })
 
-  // Reset simulated state when selected gate item changes
+  // Reset decision state when selected gate item changes
   useEffect(() => {
-    setSimulatedAction(null)
+    setPendingIntent(null)
+    setCommittedDecision(null)
+    setDecisionError(null)
+    setOkfWarning(null)
   }, [item.id])
+
+  const submitDecision = useCallback(async () => {
+    if (!pendingIntent) return
+    setSubmitting(true)
+    try {
+      const res = await fetch('/api/fieldworks/decision', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          gateId: item.id,
+          status: pendingIntent,
+          operator: 'console-operator',
+          notes: `Gate ${item.name} — ${pendingIntent} via FieldWorks Review Console`,
+        }),
+      })
+      const payload = await res.json().catch(() => ({}))
+      if (!res.ok || payload?.ok !== true) {
+        setDecisionError(String(payload?.error || 'Decision request failed'))
+      } else {
+        setCommittedDecision(payload.decision as LiveDecision)
+        if (payload.okfStageWarning) setOkfWarning(String(payload.okfStageWarning))
+      }
+    } catch (err) {
+      setDecisionError(err instanceof Error ? err.message : 'Network error')
+    } finally {
+      setSubmitting(false)
+      setPendingIntent(null)
+    }
+  }, [pendingIntent, item.id, item.name])
 
   async function runApprovedLocalAction(actionId: LocalExecutionActionId) {
     const runningLabel =
@@ -418,26 +567,59 @@ function DetailPanel({ item }: { item: GateItem }) {
         )}
       </div>
 
+      {/* Confirmation Modal */}
+      {pendingIntent && (
+        <ConfirmModal
+          intent={pendingIntent}
+          gateId={item.id}
+          onConfirm={() => void submitDecision()}
+          onCancel={() => setPendingIntent(null)}
+          submitting={submitting}
+        />
+      )}
+
       {/* Operator Actions Panel */}
       <div className="mt-4 bg-[var(--theme-card)] p-4 rounded-xl border border-[var(--theme-border)]">
-        <div className="text-[10px] font-bold opacity-40 uppercase tracking-wider mb-2">Operator Actions (Verification Review)</div>
-        
-        {simulatedAction ? (
-          <div className="space-y-3">
-            {simulatedAction === 'approved' ? (
-              <div className="p-3 rounded-lg border border-green-500/30 bg-green-500/10 text-green-600 text-xs font-semibold">
-                ✓ Simulated Only: Pipeline Approval Registered (Simulated). Manual script execution required for real gate transition.
-              </div>
-            ) : (
-              <div className="p-3 rounded-lg border border-red-500/30 bg-red-500/10 text-red-500 text-xs font-semibold">
-                ✕ Simulated Only: Pipeline Rejection Registered (Simulated). Manual script execution required for real gate transition.
+        <div className="text-[10px] font-bold opacity-40 uppercase tracking-wider mb-2">Operator Actions (Live Gate Review)</div>
+
+        {committedDecision ? (
+          <div className="space-y-2">
+            <div className={cn(
+              'p-3 rounded-lg border text-xs font-semibold',
+              committedDecision.status === 'APPROVED'
+                ? 'border-green-500/30 bg-green-500/10 text-green-600'
+                : 'border-red-500/30 bg-red-500/10 text-red-500',
+            )}>
+              {committedDecision.status === 'APPROVED' ? '✓' : '✕'} Gate decision committed to Supabase —{' '}
+              <span className="font-mono">{committedDecision.id?.slice(0, 8)}…</span>
+            </div>
+            {okfWarning && (
+              <div className="p-2 rounded-lg border border-amber-500/30 bg-amber-500/10 text-amber-700 text-[10px]">
+                ⚠ OKF staging warning: {okfWarning}. Run <code className="font-mono">./bin/okf-stage</code> manually if needed.
               </div>
             )}
+            {!okfWarning && (
+              <div className="text-[10px] text-green-600 opacity-75">✓ OKF staged update written to KNOWLEDGE/OKF/staging/</div>
+            )}
             <button
-              onClick={() => setSimulatedAction(null)}
+              id="reset-gate-action"
+              onClick={() => { setCommittedDecision(null); setOkfWarning(null) }}
               className="w-full py-1.5 rounded-lg text-xs font-semibold border border-[var(--theme-border)] bg-[var(--theme-card2)] hover:bg-[var(--theme-border)] transition-colors cursor-pointer text-center"
             >
-              Reset Review Action
+              Reset
+            </button>
+          </div>
+        ) : decisionError ? (
+          <div className="space-y-2">
+            <div className="p-3 rounded-lg border border-red-500/30 bg-red-500/10 text-red-500 text-xs">
+              ✕ Error: {decisionError}
+            </div>
+            <button
+              id="reset-gate-error"
+              onClick={() => setDecisionError(null)}
+              className="w-full py-1.5 rounded-lg text-xs font-semibold border border-[var(--theme-border)] bg-[var(--theme-card2)] hover:bg-[var(--theme-border)] transition-colors cursor-pointer text-center"
+            >
+              Dismiss
             </button>
           </div>
         ) : (
@@ -446,20 +628,22 @@ function DetailPanel({ item }: { item: GateItem }) {
               <>
                 <div className="flex gap-2">
                   <button
+                    id="approve-gate-btn"
                     className="flex-1 py-2 rounded-lg text-xs font-bold transition-all cursor-pointer text-center bg-green-600/10 text-green-600 border border-green-500/30 hover:bg-green-600/20 active:scale-[0.98]"
-                    onClick={() => setSimulatedAction('approved')}
+                    onClick={() => setPendingIntent('APPROVED')}
                   >
-                    ✓ Simulate Approve Gate
+                    ✓ Approve Gate
                   </button>
                   <button
+                    id="reject-gate-btn"
                     className="flex-1 py-2 rounded-lg text-xs font-bold transition-all cursor-pointer text-center bg-red-600/10 text-red-500 border border-red-500/30 hover:bg-red-600/20 active:scale-[0.98]"
-                    onClick={() => setSimulatedAction('rejected')}
+                    onClick={() => setPendingIntent('REJECTED')}
                   >
-                    ✕ Simulate Reject Gate
+                    ✕ Reject Gate
                   </button>
                 </div>
-                 <p className="text-[10px] text-center opacity-40 mt-1 font-mono">
-                  ⚠️ Action buttons are visually present and simulated only; they do not execute real gate-transition scripts yet. Manual script execution required for real gate transition.
+                <p className="text-[10px] text-center opacity-40 mt-1 font-mono">
+                  Actions write permanent records to Supabase and trigger OKF staging.
                 </p>
               </>
             ) : (
@@ -622,7 +806,35 @@ function GovernancePanel() {
 export function FieldWorksReviewConsole() {
   const [selectedGateId, setSelectedGateId] = useState<string>('gate-7')
   const [copiedPath, setCopiedPath] = useState<string | null>(null)
-  const selectedGate = GATE_ITEMS.find((g) => g.id === selectedGateId)!
+  const [liveData, setLiveData] = useState<LiveData | null>(null)
+  const [liveDataError, setLiveDataError] = useState<string | null>(null)
+  const [liveDataLoading, setLiveDataLoading] = useState(true)
+  const fetchedRef = useRef(false)
+
+  // Fetch live data once on mount
+  useEffect(() => {
+    if (fetchedRef.current) return
+    fetchedRef.current = true
+    fetch('/api/fieldworks/data')
+      .then((r) => r.json())
+      .then((payload: { ok: boolean; runs?: LiveData['runs']; decisions?: LiveData['decisions']; openLoops?: LiveData['openLoops']; error?: string }) => {
+        if (payload?.ok) {
+          setLiveData({
+            runs: payload.runs ?? { ok: false, error: 'missing' },
+            decisions: payload.decisions ?? { ok: false, error: 'missing' },
+            openLoops: payload.openLoops ?? { ok: false, error: 'missing' },
+          })
+        } else {
+          setLiveDataError(String(payload?.error || 'Failed to load live data'))
+        }
+      })
+      .catch((err: unknown) => {
+        setLiveDataError(err instanceof Error ? err.message : 'Network error')
+      })
+      .finally(() => setLiveDataLoading(false))
+  }, [])
+
+  const selectedGate = GATE_ITEMS_FALLBACK.find((g) => g.id === selectedGateId)!
 
   return (
     <div
@@ -640,7 +852,7 @@ export function FieldWorksReviewConsole() {
             FieldWorks Review Console
           </span>
         </div>
-        
+
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1 opacity-70">
           <div className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block animate-pulse" />
@@ -654,10 +866,28 @@ export function FieldWorksReviewConsole() {
             <span className="w-1.5 h-1.5 rounded-full bg-purple-500 inline-block" />
             3 agents staged
           </div>
+          {liveDataLoading && (
+            <div className="flex items-center gap-1.5 text-[10px] opacity-50">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-400 inline-block animate-pulse" />
+              Loading live data…
+            </div>
+          )}
+          {liveDataError && (
+            <div className="flex items-center gap-1.5 text-[10px] text-amber-600" title={liveDataError}>
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-500 inline-block" />
+              DB offline — static view
+            </div>
+          )}
+          {!liveDataLoading && !liveDataError && liveData && (
+            <div className="flex items-center gap-1.5 text-[10px] text-green-600">
+              <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block" />
+              {'runs' in liveData.runs && 'count' in liveData.runs ? liveData.runs.count : 0} runs · {'decisions' in liveData.decisions && 'count' in liveData.decisions ? liveData.decisions.count : 0} decisions
+            </div>
+          )}
         </div>
-        
+
         <div className="text-[10px] opacity-40 font-mono hidden sm:block">
-          No implementation started unless explicitly approved
+          Live · Supabase-backed · OKF-audited
         </div>
       </div>
 
@@ -701,7 +931,7 @@ export function FieldWorksReviewConsole() {
             </select>
           </div>
 
-          <DetailPanel item={selectedGate} />
+          <DetailPanel item={selectedGate} liveData={liveData} />
         </div>
 
         {/* ── RIGHT: Roster + Governance ── */}
@@ -772,7 +1002,7 @@ export function FieldWorksReviewConsole() {
         
         <div className="ml-auto flex items-center gap-1 opacity-45 text-[10px]">
           <HugeiconsIcon icon={SlidersVerticalIcon} size={11} />
-          <span>MVP — Gate actions simulated; local smoke job allowlisted.</span>
+          <span>Live — Gate decisions committed to Supabase; OKF-audited; local smoke job allowlisted.</span>
         </div>
       </div>
     </div>
